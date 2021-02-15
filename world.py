@@ -1,5 +1,7 @@
-# module for reading data from .csv file in ./covid-world directory
+# Script for reading data from .csv files in ./covid-world directory
 # and combining select columns into one file: covid-world.csv
+# The combined file will exclude US data.
+# The csv files are from: https://github.com/CSSEGISandData/COVID-19
 
 import os
 from datetime import date

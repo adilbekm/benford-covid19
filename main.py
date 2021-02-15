@@ -5,7 +5,7 @@ import sys
 import datetime
 import numpy as np
 import pandas as pd
-from benford import apply_benford
+from benford import apply_benford, plot_benford
 from covid import df
 
 states = [
@@ -34,6 +34,9 @@ for s in states:
     for i, f in enumerate(fs):
         print('frequency for {}: {:>5.1%}'.format((i + 1), f))
 
-
+    title = '{}, USA: Covid-19 Daily Cases ({})'.format(s, len(p))
+    fname ='usa_{}.png'.format(s.lower())
+    path = 'us_plots'
+    plot_benford(p, title, fname, path)
 
 
