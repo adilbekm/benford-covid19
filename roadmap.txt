@@ -1,0 +1,28 @@
+Create the following strucure:
+
+  usa.py
+  usa_data/
+  usa_output/
+  
+  world.py
+  world_data/
+  world_output/
+  
+  config.py
+  
+  readme.md
+
+usa.py needs to:
+- read data from usa_data/
+- import into dataframe
+- output .png files (and anythin else?) to usa_output/
+
+world.py needs to:
+- read data from world_data/
+- cleanup, including combine countries like Russia and Russian Federation
+- compute increases
+- remove duplicates (when data not reported for several days)
+- save as world.csv?
+...
+- output .png files (and anything else?) to world_output/
+

@@ -36,7 +36,7 @@ for s in states:
 
     title = '{}, USA: Covid-19 Daily Cases ({})'.format(s, len(p))
     fname ='usa_{}.png'.format(s.lower())
-    path = 'us_plots'
+    path = 'usa_plots'
     plot_benford(p, title, fname, path)
 
 
