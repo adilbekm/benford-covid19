@@ -1,5 +1,7 @@
 Create the following strucure:
 
+  benford.py
+
   usa.py
   usa_data/
   usa_output/
@@ -11,6 +13,10 @@ Create the following strucure:
   config.py
   
   readme.md
+
+benford.py needs to:
+- have a basic function for applying benford to a list of numbers
+- have an extended function for applying benford and plotting a graph
 
 usa.py needs to:
 - read data from usa_data/

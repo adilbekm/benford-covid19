@@ -59,12 +59,14 @@ def plot_benford(ns, title=None, fname=None, path=None):
     # error from benford
     ferr = np.array(fs) - np.array(bs)
     yerr = np.zeros((2, 9))
+    terr = 0 # total error
     for j, e in enumerate(ferr):
         i = 1
         if e < 0:
             i = 0
             e = abs(e)
         yerr[i][j] = e
+        terr += e
 
     label1 = 'Actual data'
     label2 = 'Benford\'s Law' 
@@ -72,13 +74,18 @@ def plot_benford(ns, title=None, fname=None, path=None):
     ax.bar(x, fs, width=0.6, color=my_blue, label=label1)
     ax.errorbar(x, bs, yerr=yerr, fmt='-o', elinewidth=2, ls='--',
             color=my_red, label=label2)
-    
+
     ax.set_xticks(x)
     ax.set_xticklabels(labels)
     ax.set_ylabel('Frequency')
     ax.set_xlabel('First Digit')
-    ax.legend()
-   
+    ax.legend(loc=1) # 1 = upper right
+
+    # show total error below legend
+    terr_text = 'Total Error: {:.2f}'.format(terr)
+    ax.text(0.98, 0.78, terr_text, transform=ax.transAxes,
+            ha='right', fontsize=12, color=my_red)
+    
     if fname is None:
         fname = 'test.png'
     if path:
@@ -91,7 +98,8 @@ def plot_benford(ns, title=None, fname=None, path=None):
     return
 
 
-if __name__ == '__main__': # run a test
+if __name__ == '__main__':
+    # run a quick test
     ns = [4128, 4568, 3833, 2786, 3084, 4674, 4172, 5547, 5495, 12079, 2926, 
     3776, 4899, 6168, 6959, 6490, 5587, 3978, 4633, 6096, 7181, 7436, 7187,
     6415, 9860, 6811, 7986, 8914, 9853, 5098, 6851, 5936, 8833, 11581, 10028,
