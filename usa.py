@@ -80,17 +80,14 @@ for s in states:
     z = sum([1 if i == 0 else 0 for i in p])
     p = [n for n in p if n > 0]
     
+    if len(p) == 0:
+        continue
+    
     min_date = df[df.state == s].date.min()
     max_date = df[df.state == s].date.max()
     
     # print('{}-{} (removed {} zeros, {} negatives):'.format(s, len(p), z, n))
-    
-    if len(p) == 0:
-        # print('no data')
-        continue
-    
-    fs = apply_benford(p)
-    
+    # fs = apply_benford(p)
     # for i, f in enumerate(fs):
     #     print('frequency for {}: {:>5.1%}'.format((i + 1), f))
 
@@ -98,6 +95,7 @@ for s in states:
     title = title.format(s, len(p), min_date, max_date)
     fname ='usa_{}.png'.format(s.lower())
     path = 'usa_output'
+    
     plot_benford(p, title, fname, path)
 
 print('USA output is ready')

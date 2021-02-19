@@ -1,34 +1,48 @@
-# Script for reading data from .csv files in ./covid-world directory
-# and combining select columns into one file: covid-world.csv
-# The combined file will exclude US data.
-# The csv files are from: https://github.com/CSSEGISandData/COVID-19
+# World script:
+#   read source data in world_data/
+#   combine related country names
+#   load to dataframe
+#   remove US data
+#   compute increases, i.e. daily numbers
+#   save output
+
+# The data source is csv files from:
+# https://github.com/CSSEGISandData/COVID-19
+# (Johns Hopkins University)
+
 
 import os
 from datetime import date
 import numpy as np
 import pandas as pd
+import math
+
+
+print('[BEG] begin processing')
+
 
 # dest file
-dst_fn = 'covid-world.csv'
+dst_fn = 'world.csv'
 try: os.remove(dst_fn)
 except OSError: pass
 dst = open(dst_fn, 'a', encoding='utf8')
 
 # get list of source files
 p = os.getcwd()
-p += '/covid-world'
-fns = os.listdir(p) # file names in dir ./covid-world
+p += '/world_data'
+fns = os.listdir(p) # file names in dir ./world_data
 
 print('[OK ] found {} files in dir {}'.format(len(fns), p))
 
+
 def date_parse(ds):
-    '''Parses string ds that represents a date and time,
+    '''Parses string, ds, that represents a date and time,
     and returns the date object. Works with the following
-    types of inputs:
-    3/15/20 22:52
-    3/15/2020 22:52
-    2020-03-15 22:52:08
-    2020-03-15T22:52:08
+    types of inputs (examples):
+      3/15/20 22:52
+      3/15/2020 22:52
+      2020-03-15 22:52:08
+      2020-03-15T22:52:08
     '''
     d = ds.split()
     if len(d) != 2:
@@ -43,6 +57,7 @@ def date_parse(ds):
         yy = int(d[2])
         return date(year=yy, month=mm, day=dd)
     return date.fromisoformat(d)
+
 
 # expected column structure
 col_exp = [
@@ -61,22 +76,27 @@ col_exp = [
     'Incidence_Rate', 
     'Case-Fatality_Ratio']
 
+
 # dest dict
 dst_dict = {
     'location':   [], # df.Country_Region
     'province':   [], # df.Province_State
     'last_upd':   [], # df.Last_Update
+    'file_date':  [], # [date based on source file name]
     'cases':      [], # df.Confirmed
     'cases_inc':  [], # [computed, daily increase]
     'deaths':     [], # df.Deaths
     'deaths_inc': [], # [computed, daily increase]
     'src_file':   []} # [source file name]
 
-for fn in fns:
+
+for fn in fns: # for each csv file
     pfn = p + '/' + fn
     f = open(pfn, 'r', encoding='utf8')
     df = pd.read_csv(f)
+
     col = list(df.columns)
+    # column names can have one of two literations, so check which one
     if 'Province/State' in col:
         try:
             assert 'Province/State' in col
@@ -108,30 +128,88 @@ for fn in fns:
     except:
         print('[ERR] file {} has problem with dates'.format(fn))
         continue
-    locs = [s.strip() for s in locs]
+    
     cses = list(df.Confirmed)
     dths = list(df.Deaths)
+    
+    locs = [s.strip() for s in locs]
+
+    # parse file name (ex: '03-15-2020.csv') into date object
+    fl = fn[0:10].split('-')
+    fl = [int(s) for s in fl]
+    fd = date(year=fl[2], month=fl[0], day=fl[1])
+    
+    fnds = [fd for i in range(len(df))]
     fnms = [fn for i in range(len(df))]
+
     dst_dict['location'].extend(locs)
     dst_dict['province'].extend(prov)
     dst_dict['last_upd'].extend(dats)
+    dst_dict['file_date'].extend(fnds)
     dst_dict['cases'].extend(cses)
     dst_dict['deaths'].extend(dths)
     dst_dict['src_file'].extend(fnms)
 
+
+# combine related country names: dups[n][0] => dups[n][1]
+dups = [
+    ('Bahamas, The', 'Bahamas'),
+    ('The Bahamas', 'Bahamas'),
+    ('Gambia, The', 'Gambia'),
+    ('The Gambia', 'Gambia'),
+    ('Iran (Islamic Republic of)', 'Iran'),
+    ('Korea, South', 'South Korea'),
+    ('Mainland China', 'China'),
+    ('Russian Federation', 'Russia'),
+    ('Taiwan*', 'Taiwan'),
+    ('Viet Nam', 'Vietnam'),
+    ('occupied Palestinian territory', 'Palestine')]
+
+for dup in dups:
+    loc = dst_dict['location']
+    dst_dict['location'] = [dup[1] if c == dup[0] else c for c in loc]
+
+# set to zero so that dictionary can be imported to dataframe
 dst_dict['cases_inc'].extend([0 for i in range(len(dst_dict['cases']))])
 dst_dict['deaths_inc'].extend([0 for i in range(len(dst_dict['deaths']))])
-print('[OK ] dict created from files')
+print('[OK ] data imported to dictionary')
 
 df = pd.DataFrame(dst_dict)
 print('[OK ] dataframe created of len {}'.format(len(df)))
 
 df = df[df.location != 'US']
-print('[INF] removed US records')
+print('[OK ] removed US data')
 
-df = df.sort_values(by=['location', 'province', 'last_upd'])
-print('[OK ] dataframe sorted by location, province, last_upd')
+df = df.sort_values(by=['location', 'province', 'file_date'], ignore_index=True)
+
+
+# compute increases, i.e. daily cases/deaths
+prev_loc = None
+prev_cases = prev_deaths = 0
+for i in range(len(df)):
+    location = df.at[i, 'location']
+    province = df.at[i, 'province']
+    cases    = df.at[i, 'cases']
+    deaths   = df.at[i, 'deaths']
+    loc = str(location) + str(province)
+
+    # some cases/deaths could be NaN - treat them as zero
+    if math.isnan(cases):
+        cases = 0
+    if math.isnan(deaths):
+        deaths = 0
+
+    if loc == prev_loc:
+        df.at[i, 'cases_inc'] = cases - prev_cases
+        df.at[i, 'deaths_inc'] = deaths - prev_deaths
+    
+    prev_loc = loc
+    prev_cases = cases
+    prev_deaths = deaths
+
+print('[OK ] daily numbers computed')
+
 
 df.to_csv(dst, index=False, sep='|')
-print('[OK ] dataframe saved in file {}'.format(dst_fn))
+print('[END] dataframe saved in file {}'.format(dst_fn))
 
