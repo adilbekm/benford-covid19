@@ -29,6 +29,5 @@ world.py needs to:
 - compute increases
 - remove duplicates (when data not reported for several days)
 - save as world.csv?
-...
 - output .png files (and anything else?) to world_output/
 

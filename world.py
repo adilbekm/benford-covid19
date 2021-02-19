@@ -1,11 +1,14 @@
 # World script:
+# 
 #   read source data in world_data/
 #   combine related country names
 #   load to dataframe
 #   remove US data
 #   compute increases, i.e. daily numbers
-#   save output
-
+#   save dataframe to world.csv
+#   apply Benford's Law to select locations
+#   output plots for select locations
+# 
 # The data source is csv files from:
 # https://github.com/CSSEGISandData/COVID-19
 # (Johns Hopkins University)
@@ -16,10 +19,10 @@ from datetime import date
 import numpy as np
 import pandas as pd
 import math
+from benford import plot_benford
 
 
 print('[BEG] begin processing')
-
 
 # dest file
 dst_fn = 'world.csv'
@@ -33,6 +36,17 @@ p += '/world_data'
 fns = os.listdir(p) # file names in dir ./world_data
 
 print('[OK ] found {} files in dir {}'.format(len(fns), p))
+
+
+# locations (country, province) for Benford's Law output
+blocs = [
+    ('South Korea', None),
+    ('Libya', None),
+    ('India', 'Delhi'),
+    ('Lithuania', None),
+    ('Kazakhstan', None),
+    ('Uzbekistan', None),
+    ('Russia', 'Moscow')]
 
 
 def date_parse(ds):
@@ -60,21 +74,20 @@ def date_parse(ds):
 
 
 # expected column structure
-col_exp = [
-    'FIPS',
-    'Admin2', 
-    'Province_State', 
-    'Country_Region', 
-    'Last_Update', 
-    'Lat', 
-    'Long_', 
-    'Confirmed', 
-    'Deaths', 
-    'Recovered', 
-    'Active', 
-    'Combined_Key', 
-    'Incidence_Rate', 
-    'Case-Fatality_Ratio']
+#  'FIPS',
+#  'Admin2', 
+#  'Province_State', 
+#  'Country_Region', 
+#  'Last_Update', 
+#  'Lat', 
+#  'Long_', 
+#  'Confirmed', 
+#  'Deaths', 
+#  'Recovered', 
+#  'Active', 
+#  'Combined_Key', 
+#  'Incidence_Rate', 
+#  'Case-Fatality_Ratio'
 
 
 # dest dict
@@ -151,14 +164,21 @@ for fn in fns: # for each csv file
     dst_dict['src_file'].extend(fnms)
 
 
+print('[OK ] data imported to dictionary')
+
+
 # combine related country names: dups[n][0] => dups[n][1]
 dups = [
     ('Bahamas, The', 'Bahamas'),
     ('The Bahamas', 'Bahamas'),
+    ('UK', 'United Kingdom'),
     ('Gambia, The', 'Gambia'),
     ('The Gambia', 'Gambia'),
     ('Iran (Islamic Republic of)', 'Iran'),
     ('Korea, South', 'South Korea'),
+    ('Republic of Korea', 'South Korea'),
+    ('Republic of Moldova', 'Moldova'),
+    ('Republic of Ireland', 'Ireland'),
     ('Mainland China', 'China'),
     ('Russian Federation', 'Russia'),
     ('Taiwan*', 'Taiwan'),
@@ -172,18 +192,17 @@ for dup in dups:
 # set to zero so that dictionary can be imported to dataframe
 dst_dict['cases_inc'].extend([0 for i in range(len(dst_dict['cases']))])
 dst_dict['deaths_inc'].extend([0 for i in range(len(dst_dict['deaths']))])
-print('[OK ] data imported to dictionary')
 
 df = pd.DataFrame(dst_dict)
-print('[OK ] dataframe created of len {}'.format(len(df)))
+print('[OK ] dataframe created, len={:,}'.format(len(df)))
 
 df = df[df.location != 'US']
-print('[OK ] removed US data')
+print('[OK ] US data removed, len={:,}'.format(len(df)))
 
 df = df.sort_values(by=['location', 'province', 'file_date'], ignore_index=True)
 
 
-# compute increases, i.e. daily cases/deaths
+# compute increases, i.e. daily cases/deaths numbers
 prev_loc = None
 prev_cases = prev_deaths = 0
 for i in range(len(df)):
@@ -193,7 +212,7 @@ for i in range(len(df)):
     deaths   = df.at[i, 'deaths']
     loc = str(location) + str(province)
 
-    # some cases/deaths could be NaN - treat them as zero
+    # some cases/deaths could be NaN; treat them as zero
     if math.isnan(cases):
         cases = 0
     if math.isnan(deaths):
@@ -207,9 +226,44 @@ for i in range(len(df)):
     prev_cases = cases
     prev_deaths = deaths
 
+
 print('[OK ] daily numbers computed')
 
 
 df.to_csv(dst, index=False, sep='|')
-print('[END] dataframe saved in file {}'.format(dst_fn))
+dst.close()
+print('[OK ] dataframe saved in file {}'.format(dst_fn))
+
+
+# apply benford to selected locations
+for bloc in blocs:
+    
+    loc = bloc[0]
+    pro = bloc[1]
+    
+    if pro is None:
+        df1 = df[(df.location == loc) & (df.province.isna())]
+    else:
+        df1 = df[(df.location == loc) & (df.province == pro)]
+   
+    p = list(df1.cases_inc)
+    p = [n for n in p if n > 0]
+
+    if len(p) == 0:
+        continue
+
+    min_date = df1.file_date.min()
+    max_date = df1.file_date.max()
+
+    if pro:
+        loc = loc + '_' + pro
+    title = 'Covid-19 Daily Cases: {}\n{} numbers from {} to {}'
+    title = title.format(loc, len(p), min_date, max_date)
+    fname ='{}.png'.format(loc.lower())
+    path = 'world_output'
+
+    plot_benford(p, title, fname, path)
+
+
+print('[END] world output created')
 

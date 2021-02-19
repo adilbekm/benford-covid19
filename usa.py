@@ -1,18 +1,23 @@
 # USA script:
-# read raw data, apply Benford's Law, and output plots by state
+# 
+#   read raw data
+#   apply Benford's Law
+#   output plots by state
+# 
+# The data source is Covid Tracking Project: https://covidtracking.com
+
 
 import os
 import sys
 import datetime
 import numpy as np
 import pandas as pd
-from benford import apply_benford, plot_benford
+from benford import plot_benford
 
 
 # Step 1. Read USA covid-19 data to pandas dataframe.
-# The data source is Covid Tracking Project: https://covidtracking.com
 
-print('Please wait...')
+print('[BEG] begin processing')
 
 src_name = 'usa_data/all-states-history.csv'
 src = open(src_name, 'r', encoding='utf8')
@@ -75,7 +80,10 @@ states = [
     'VI', 'VT', 'WA', 'WI', 'WV', 'WY']
 
 for s in states:
-    p = list(df[df.state == s].positiveIncrease)
+    
+    df1 = df[df.state == s]
+    
+    p = list(df1.positiveIncrease)
     n = sum([1 if i < 0 else 0 for i in p])
     z = sum([1 if i == 0 else 0 for i in p])
     p = [n for n in p if n > 0]
@@ -83,20 +91,21 @@ for s in states:
     if len(p) == 0:
         continue
     
-    min_date = df[df.state == s].date.min()
-    max_date = df[df.state == s].date.max()
+    min_date = df1.date.min()
+    max_date = df1.date.max()
     
     # print('{}-{} (removed {} zeros, {} negatives):'.format(s, len(p), z, n))
     # fs = apply_benford(p)
     # for i, f in enumerate(fs):
     #     print('frequency for {}: {:>5.1%}'.format((i + 1), f))
 
-    title = 'Covid-19 Daily Cases: {}, USA\n{} numbers from {} to {}'
+    title = 'Covid-19 Daily Cases: USA_{}\n{} numbers from {} to {}'
     title = title.format(s, len(p), min_date, max_date)
     fname ='usa_{}.png'.format(s.lower())
     path = 'usa_output'
     
     plot_benford(p, title, fname, path)
 
-print('USA output is ready')
+
+print('[END] USA output is ready')
 
