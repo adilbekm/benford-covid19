@@ -1,8 +1,8 @@
 # USA script:
 # 
-#   read raw data
-#   apply Benford's Law
-#   output plots by state
+# - read raw data
+# - apply Benford's Law
+# - output plots by state
 # 
 # The data source is Covid Tracking Project: https://covidtracking.com
 
@@ -15,7 +15,8 @@ import pandas as pd
 from benford import plot_benford
 
 
-# Step 1. Read USA covid-19 data to pandas dataframe.
+# ------------------------------------------------------------------
+# read USA covid-19 data to pandas dataframe
 
 print('[BEG] begin processing')
 
@@ -24,52 +25,53 @@ src = open(src_name, 'r', encoding='utf8')
 df = pd.read_csv(src)
 
 # df = df.astype({
-    # 'date': 'datetime64[ns]',
-    # 'state': 'string',
-    # 'dataQualityGrade': 'string'
-    # 'death': 'int64',
-    # 'deathConfirmed': 'int64',
-    # 'deathIncrease': 'int64',
-    # 'deathProbable': 'int64',
-    # 'hospitalized': 'int64',
-    # 'hospitalizedCumulative': 'int64',
-    # 'hospitalizedCurrently': 'int64',
-    # 'hospitalizedIncrease': 'int64',
-    # 'inIcuCumulative': 'int64',
-    # 'inIcuCurrently': 'int64',
-    # 'negative': 'int64',
-    # 'negativeIncrease': 'int64',
-    # 'negativeTestsAntibody': 'int64',
-    # 'negativeTestsPeopleAntibody': 'int64',
-    # 'negativeTestsViral': 'int64',
-    # 'onVentilatorCumulative': 'int64',
-    # 'onVentilatorCurrently': 'int64',
-    # 'positive': 'int64',
-    # 'positiveCasesViral': 'int64',
-    # 'positiveIncrease': 'int64',
-    # 'positiveScore': 'int64',
-    # 'positiveTestsAntibody': 'int64',
-    # 'positiveTestsAntigen': 'int64',
-    # 'positiveTestsPeopleAntibody': 'int64',
-    # 'positiveTestsPeopleAntigen': 'int64',
-    # 'positiveTestsViral': 'int64',
-    # 'recovered': 'int64',
-    # 'totalTestEncountersViral': 'int64',
-    # 'totalTestEncountersViralIncrease': 'int64',
-    # 'totalTestResults': 'int64',
-    # 'totalTestResultsIncrease': 'int64',
-    # 'totalTestsAntibody': 'int64',
-    # 'totalTestsAntigen': 'int64',
-    # 'totalTestsPeopleAntibody': 'int64',
-    # 'totalTestsPeopleAntigen': 'int64',
-    # 'totalTestsPeopleViral': 'int64',
-    # 'totalTestsPeopleViralIncrease': 'int64',
-    # 'totalTestsViral': 'int64',
-    # 'totalTestsViralIncrease': 'int64'})
+#     'date': 'datetime64[ns]',
+#     'state': 'string',
+#     'dataQualityGrade': 'string'
+#     'death': 'int64',
+#     'deathConfirmed': 'int64',
+#     'deathIncrease': 'int64',
+#     'deathProbable': 'int64',
+#     'hospitalized': 'int64',
+#     'hospitalizedCumulative': 'int64',
+#     'hospitalizedCurrently': 'int64',
+#     'hospitalizedIncrease': 'int64',
+#     'inIcuCumulative': 'int64',
+#     'inIcuCurrently': 'int64',
+#     'negative': 'int64',
+#     'negativeIncrease': 'int64',
+#     'negativeTestsAntibody': 'int64',
+#     'negativeTestsPeopleAntibody': 'int64',
+#     'negativeTestsViral': 'int64',
+#     'onVentilatorCumulative': 'int64',
+#     'onVentilatorCurrently': 'int64',
+#     'positive': 'int64',
+#     'positiveCasesViral': 'int64',
+#     'positiveIncrease': 'int64',
+#     'positiveScore': 'int64',
+#     'positiveTestsAntibody': 'int64',
+#     'positiveTestsAntigen': 'int64',
+#     'positiveTestsPeopleAntibody': 'int64',
+#     'positiveTestsPeopleAntigen': 'int64',
+#     'positiveTestsViral': 'int64',
+#     'recovered': 'int64',
+#     'totalTestEncountersViral': 'int64',
+#     'totalTestEncountersViralIncrease': 'int64',
+#     'totalTestResults': 'int64',
+#     'totalTestResultsIncrease': 'int64',
+#     'totalTestsAntibody': 'int64',
+#     'totalTestsAntigen': 'int64',
+#     'totalTestsPeopleAntibody': 'int64',
+#     'totalTestsPeopleAntigen': 'int64',
+#     'totalTestsPeopleViral': 'int64',
+#     'totalTestsPeopleViralIncrease': 'int64',
+#     'totalTestsViral': 'int64',
+#     'totalTestsViralIncrease': 'int64'})
 
 
-# Step 2. Apply Benford's Law by state, and save resulting plots to PNG files.
-# The column to use for analysys is "positiveIncrease" i.e. the count of daily new cases.
+# ------------------------------------------------------------------
+# apply Benford's Law by state, and save resulting plots in png files
+# use column 'positiveIncrease', i.e. daily positive cases
 
 states = [
     'AK', 'AL', 'AR', 'AS', 'AZ', 'CA', 'CO', 'CT', 'DC', 'DE',
@@ -107,5 +109,5 @@ for s in states:
     plot_benford(p, title, fname, path)
 
 
-print('[END] USA output is ready')
+print('[END] usa output is ready')
 

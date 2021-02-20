@@ -1,3 +1,3 @@
-# Applying Benford's Law to COVID-19 Daily Case Numbers #
+# Benford's Law Applied to COVID-19 Case Reports #
 
 Doc coming
