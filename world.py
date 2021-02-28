@@ -1,13 +1,14 @@
 # World script:
 # 
-# - read source data in world_data/
+# - read input data from world_data/
 # - combine related country names
-# - load to dataframe
 # - remove US data
-# - compute increases, i.e. daily numbers
-# - save dataframe to world.csv
-# - apply Benford's Law to select locations
-# - output plots for select locations
+# - compute increases, i.e. daily positive cases
+# - apply Benford's Law to all locations
+# - output plots for all locations: world_output/[location].png
+# - output location ranks by error: world_rank.csv
+# - save dataframe: extra/world.csv
+# - save list of countries: extra/locations.csv
 # 
 # The data source is csv files from Johns Hopkins University:
 # https://github.com/CSSEGISandData/COVID-19
@@ -18,7 +19,7 @@ import math
 import numpy as np
 import pandas as pd
 from datetime import date
-from benford_world import locs_benford, plot_benford_world
+from benford import benford_error, plot_benford_world
 
 
 print('[BEG] begin processing')
@@ -27,25 +28,34 @@ print('[BEG] begin processing')
 # -----------------------------------------------------------------
 # initial setup
 
-# open destination files
-dst_fn = 'world.csv'
+# file for saving processed dataframe
+dst_fn = 'extra/world.csv'
 try: os.remove(dst_fn)
 except OSError: pass
 dst = open(dst_fn, 'a', encoding='utf8')
 
-# file to log location names
-locf_fn = 'notes/locations.csv'
+# file for saving location names
+locf_fn = 'extra/world_locations.csv'
 try: os.remove(locf_fn)
 except OSError: pass
 locf = open(locf_fn, 'a', encoding='utf8')
-locf.write('location, province\n')
+locf.write('location|province\n')
+
+# file for saving location ranks by error
+rfn = 'world_rank.csv'
+try: os.remove(rfn)
+except OSError: pass
+rf = open(rfn, 'a', encoding='utf8')
+rf.write('location|province|numbers|error|rank\n')
 
 # get list of source files (csv files)
 p = os.getcwd()
 p += '/world_data'
 fns = os.listdir(p) # file names in world_data/
 
-print('[OK ] {} files found in {}'.format(len(fns), p[-11:]))
+
+print('[OK ] {} files found in {}/'.format(len(fns), p[-10:]))
+
 
 def date_parse(ds):
     '''Parses string, ds, that represents a date and time,
@@ -85,6 +95,7 @@ def date_parse(ds):
 #  'Combined_Key', 
 #  'Incidence_Rate', 
 #  'Case-Fatality_Ratio'
+
 
 # dest dict
 dst_dict = {
@@ -211,6 +222,7 @@ df = df.sort_values(by=['location', 'province', 'file_date'], ignore_index=True)
 
 prev_loc = None
 prev_cases = prev_deaths = 0
+loc_prov = []
 
 for i in range(len(df)):
 
@@ -230,8 +242,9 @@ for i in range(len(df)):
         df.at[i, 'cases_inc'] = cases - prev_cases
         df.at[i, 'deaths_inc'] = deaths - prev_deaths
     else:
-        # log location to file (notes/locations.csv)
-        locf.write('{}, {}\n'.format(location, province))
+        # save location to list and file
+        loc_prov.append((location, province))
+        locf.write('{}|{}\n'.format(location, province))
     
     prev_loc = loc
     prev_cases = cases
@@ -249,9 +262,57 @@ print('[OK ] dataframe saved in file {}'.format(dst_fn))
 
 
 # -----------------------------------------------------------------
-# apply benford to selected locations
+# compute location ranks by error size
 
-plot_benford_world(df, locs_benford)
+err_list = []
+err_loc_list = []
+
+for lp in loc_prov:
+    l = lp[0] # location
+    p = lp[1] # province
+
+    if str(p) == 'nan': # no province
+        df1 = df[(df.location == l) & (df.province.isna())]
+    else:
+        df1 = df[(df.location == l) & (df.province == p)]
+    
+    n = list(df1.cases_inc)
+    n = [num for num in n if num > 0]
+    n_len = len(n)
+
+    if n_len == 0:
+        continue
+
+    err = benford_error(n)
+    err_list.append(err)
+    err_loc_list.append([l, p, n_len, err])
+
+err_list.sort()
+
+for i in range(len(err_loc_list)):
+    e = err_loc_list[i][3]
+    e_index = err_list.index(e)
+    rank = e_index + 1
+    err_loc_list[i].append(rank)
+
+err_loc_list.sort(key=lambda elr: elr[4])
+
+# write to file
+for el in err_loc_list:
+    el = [str(e) for e in el]
+    el = '|'.join(el)
+    rf.write(el + '\n')
+
+print('[OK ] ranks computed and saved to file')
+
+
+# -----------------------------------------------------------------
+# create benford plots for all locations, and save in png files
+# use column 'cases_inc', i.e. daily positive cases
+
+print('[INF] creating plots...')
+
+plot_benford_world(df, loc_prov)
 
 
 print('[END] world output is ready')

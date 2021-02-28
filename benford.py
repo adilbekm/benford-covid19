@@ -24,13 +24,13 @@ bs = [
 
 
 def apply_benford(ns):
-    '''Given a list of non-zero integers, ns, calculates frequency
-    of numbers 1, 2, .., 9 in the first digit, and returns the list
-    of 9 floating point numbers, [f1, f2, .. f9], where
-    f1 is the frequency of 1, f2 is the frequency of 2, etc.
+    '''Given a list of integers ns, calculates frequency
+    of numbers 1, 2, .., 9 in the first digit, and returns
+    a list of 9 floating point numbers, [f1, f2, .. f9],
+    where f1 is the frequency of 1, f2 the frequency of 2, etc.
     
-    If the integer is negative, the negative sign will be ignored.
-    If the integer is zero, it will be ingored.
+    If an integer is negative, the negative sign will be ignored;
+    if an integer is zero, it will be ingored.
     '''
     ns = [str(abs(n)) for n in ns if n != 0]
     cs = [0 for n in range(9)]
@@ -43,8 +43,25 @@ def apply_benford(ns):
     return fs
 
 
+def benford_error(ns):
+    '''Given a list of integers ns, passes it to apply_benford(),
+    and returns total absolute error from true benford frequencies.
+    Returned value will be a floating point number.
+    '''
+    fs = apply_benford(ns)
+    ferr = np.array(fs) - np.array(bs)
+    terr = sum(abs(ferr))
+    return terr
+
+
 def plot_benford(ns, title=None, fname=None, path=None):
-    '''Doc coming
+    '''Given a list of integers ns, passes it to apply_benford(),
+    and creates a plot of its output.
+
+    The plot will have a title if one is specified, and will be
+    saved as PNG file with the name and location as specified by
+    parameters fname and path, or as "test.png" in the current
+    directory if not specified.
     '''
     fs = apply_benford(ns)
     
@@ -96,6 +113,47 @@ def plot_benford(ns, title=None, fname=None, path=None):
     fig.savefig(fname)
     plt.close()
     return
+
+
+def plot_benford_world(df, loc_prov, path=None):
+    '''Given dataframe df (see world.py for details about its structure),
+    and a list of country-province tuples loc_prov, applies Benford's law
+    and creates a plot with plot_benford() for each location-province.
+    '''
+    for lp in loc_prov:
+
+        l = str(lp[0])
+        p = str(lp[1])
+
+        if p == 'nan': # no province
+            df1 = df[(df.location == l) & (df.province.isna())]
+        else:
+            df1 = df[(df.location == l) & (df.province == p)]
+
+        n = list(df1.cases_inc)
+        n = [k for k in n if k > 0]
+        n_len = len(n)
+
+        if n_len == 0:
+            continue
+
+        min_date = df1.file_date.min()
+        max_date = df1.file_date.max()
+
+        l = l.replace(' ', '_')
+        p = p.replace(' ', '_')
+        if p == 'nan':
+            lpf = l
+        else:
+            lpf = l + '_' + p
+        title = 'Covid-19 Daily Cases: {}\n{} numbers from {} to {}'
+        title = title.format(lpf, n_len, min_date, max_date)
+        fname ='{}.png'.format(lpf.lower())
+        
+        if path is None:
+            path = 'world_output'
+
+        plot_benford(n, title, fname, path)
 
 
 if __name__ == '__main__':
