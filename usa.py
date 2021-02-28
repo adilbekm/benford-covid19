@@ -29,7 +29,7 @@ rfn = 'usa_rank.csv'
 try: os.remove(rfn)
 except OSError: pass
 rf = open(rfn, 'a', encoding='utf8')
-rf.write('state|numbers|error|rank\n')
+rf.write('State,Numbers,Error,Rank\n')
 
 # df = df.astype({
 #     'date': 'datetime64[ns]',
@@ -140,7 +140,7 @@ err_state_list.sort(key=lambda esr: esr[3])
 # write to file
 for es in err_state_list:
     es = [str(e) for e in es]
-    es = '|'.join(es)
+    es = ','.join(es)
     rf.write(es + '\n')
 
 

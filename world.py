@@ -39,14 +39,14 @@ locf_fn = 'extra/world_locations.csv'
 try: os.remove(locf_fn)
 except OSError: pass
 locf = open(locf_fn, 'a', encoding='utf8')
-locf.write('location|province\n')
+locf.write('Location,Province\n')
 
 # file for saving location ranks by error
 rfn = 'world_rank.csv'
 try: os.remove(rfn)
 except OSError: pass
 rf = open(rfn, 'a', encoding='utf8')
-rf.write('location|province|numbers|error|rank\n')
+rf.write('Location,Province,Numbers,Error,Rank\n')
 
 # get list of source files (csv files)
 p = os.getcwd()
@@ -55,6 +55,45 @@ fns = os.listdir(p) # file names in world_data/
 
 
 print('[OK ] {} files found in {}/'.format(len(fns), p[-10:]))
+
+
+def safe_string(s):
+    '''Given string s, returns simplified and cleaned version
+    by removing any characters other than space and latin letters.
+    '''
+    s = s.strip()
+    s = s.replace('-', ' ')
+    slist = []
+    cs = 0 # consequtive space
+    for c in s:
+        if ord(c) == 32: # space
+            cs += 1
+            if cs < 2:
+                slist.append(c)
+        elif ((ord(c) > 64 and ord(c) < 91) or  # capital letters
+              (ord(c) > 96 and ord(c) < 123)):  # small letters
+            cs = 0
+            slist.append(c)
+        else:
+            cs = 0
+    s = ''.join(slist)
+    return s
+
+
+# def safe_string(s):
+#     '''Given string s, returns cleaned and simplified version.
+#     '''
+#     s = s.strip()
+#     s = s.replace(' ', '_')
+#     s = s.replace('-', '_')
+#     slist = []
+#     for c in s:
+#         if (ord(c) == 95                        # _ underscore
+#             or (ord(c) > 64 and ord(c) < 91)    # capital letters
+#             or (ord(c) > 96 and ord(c) < 123)): # small letters
+#             slist.append(c)
+#     s = ''.join(slist)
+#     return s
 
 
 def date_parse(ds):
@@ -155,7 +194,9 @@ for fn in fns: # for each csv file
     cses = list(df.Confirmed)
     dths = list(df.Deaths)
     
-    locs = [s.strip() for s in locs]
+    # clean up location names
+    locs = [safe_string(str(l)) for l in locs]
+    prov = [safe_string(str(p)) for p in prov]
 
     # parse file name (ex: '03-15-2020.csv') into date object
     fl = fn[0:10].split('-')
@@ -180,19 +221,18 @@ print('[OK ] data imported to dictionary')
 # combine related country names: dups[n][0] => dups[n][1]
 
 dups = [
-    ('Bahamas, The', 'Bahamas'),
+    ('Bahamas The', 'Bahamas'),
     ('The Bahamas', 'Bahamas'),
     ('UK', 'United Kingdom'),
-    ('Gambia, The', 'Gambia'),
+    ('Gambia The', 'Gambia'),
     ('The Gambia', 'Gambia'),
-    ('Iran (Islamic Republic of)', 'Iran'),
-    ('Korea, South', 'South Korea'),
+    ('Iran Islamic Republic of', 'Iran'),
+    ('Korea South', 'South Korea'),
     ('Republic of Korea', 'South Korea'),
     ('Republic of Moldova', 'Moldova'),
     ('Republic of Ireland', 'Ireland'),
     ('Mainland China', 'China'),
     ('Russian Federation', 'Russia'),
-    ('Taiwan*', 'Taiwan'),
     ('Viet Nam', 'Vietnam'),
     ('occupied Palestinian territory', 'Palestine')]
 
@@ -209,16 +249,16 @@ dst_dict['cases_inc'].extend([0 for i in range(len(dst_dict['cases']))])
 dst_dict['deaths_inc'].extend([0 for i in range(len(dst_dict['deaths']))])
 
 df = pd.DataFrame(dst_dict)
-print('[OK ] dataframe created, len={:,}'.format(len(df)))
+print('[OK ] dataframe created with len={:,}'.format(len(df)))
 
 df = df[df.location != 'US']
-print('[OK ] usa data removed, len={:,}'.format(len(df)))
+print('[OK ] usa data removed, remaining len={:,}'.format(len(df)))
 
 df = df.sort_values(by=['location', 'province', 'file_date'], ignore_index=True)
 
 
 # -----------------------------------------------------------------
-# compute increases (daily numbers), and log location info
+# compute increases (daily numbers), and save location info
 
 prev_loc = None
 prev_cases = prev_deaths = 0
@@ -244,13 +284,14 @@ for i in range(len(df)):
     else:
         # save location to list and file
         loc_prov.append((location, province))
-        locf.write('{}|{}\n'.format(location, province))
+        locf.write('{},{}\n'.format(location, province))
     
     prev_loc = loc
     prev_cases = cases
     prev_deaths = deaths
 
 print('[OK ] daily numbers computed')
+print('[OK ] location names saved in file {}'.format(locf_fn))
 
 
 # -----------------------------------------------------------------
@@ -271,10 +312,12 @@ for lp in loc_prov:
     l = lp[0] # location
     p = lp[1] # province
 
-    if str(p) == 'nan': # no province
-        df1 = df[(df.location == l) & (df.province.isna())]
-    else:
-        df1 = df[(df.location == l) & (df.province == p)]
+    df1 = df[(df.location == l) & (df.province == p)]
+    
+    # if p == 'nan': # no province
+    #     df1 = df[(df.location == l) & (df.province.isna())]
+    # else:
+    #     df1 = df[(df.location == l) & (df.province == p)]
     
     n = list(df1.cases_inc)
     n = [num for num in n if num > 0]
@@ -300,10 +343,10 @@ err_loc_list.sort(key=lambda elr: elr[4])
 # write to file
 for el in err_loc_list:
     el = [str(e) for e in el]
-    el = '|'.join(el)
+    el = ','.join(el)
     rf.write(el + '\n')
 
-print('[OK ] ranks computed and saved to file')
+print('[OK ] ranks computed and saved in file {}'.format(rfn))
 
 
 # -----------------------------------------------------------------

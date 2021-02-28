@@ -22,22 +22,6 @@ bs = [
     0.051152522,
     0.045757490]
 
-def safe_string(s):
-    '''Given string s, returns simplified and safe version
-    that can be used in a file name.
-    '''
-    pass
-    s = s.replace(' ', '_')
-    s = s.replace('-', '_')
-    slist = []
-    for c in s:
-        if (ord(c) == 95                        # undescore
-            or (ord(c) > 64 and ord(c) < 91)    # capital letters
-            or (ord(c) > 96 and ord(c) < 123)): # small letters
-            slist.append(c)
-    s = ''.join(slist)
-    return s
-
 
 def apply_benford(ns):
     '''Given a list of integers ns, calculates frequency
@@ -160,7 +144,7 @@ def plot_benford_world(df, loc_prov, path=None):
             lp_full = l
         else:
             lp_full = l + '_' + p
-        lp_safe = safe_string(lp_full)
+        lp_safe = lp_full.replace(' ', '_')
         title = 'Covid-19 Daily Cases: {}\n{} numbers from {} to {}'
         title = title.format(lp_safe, n_len, min_date, max_date)
         fname ='{}.png'.format(lp_safe.lower())
