@@ -314,11 +314,6 @@ for lp in loc_prov:
 
     df1 = df[(df.location == l) & (df.province == p)]
     
-    # if p == 'nan': # no province
-    #     df1 = df[(df.location == l) & (df.province.isna())]
-    # else:
-    #     df1 = df[(df.location == l) & (df.province == p)]
-    
     n = list(df1.cases_inc)
     n = [num for num in n if num > 0]
     n_len = len(n)

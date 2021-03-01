@@ -125,10 +125,7 @@ def plot_benford_world(df, loc_prov, path=None):
         l = str(lp[0])
         p = str(lp[1])
 
-        if p == 'nan': # no province
-            df1 = df[(df.location == l) & (df.province.isna())]
-        else:
-            df1 = df[(df.location == l) & (df.province == p)]
+        df1 = df[(df.location == l) & (df.province == p)]
 
         n = list(df1.cases_inc)
         n = [k for k in n if k > 0]
