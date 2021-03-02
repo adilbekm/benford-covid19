@@ -46,7 +46,7 @@ rfn = 'world_rank.csv'
 try: os.remove(rfn)
 except OSError: pass
 rf = open(rfn, 'a', encoding='utf8')
-rf.write('Location,Province,Numbers,Error,Rank\n')
+rf.write('Rank,Location,Province,Numbers,Error,File\n')
 
 # get list of source files (csv files)
 p = os.getcwd()
@@ -80,22 +80,6 @@ def safe_string(s):
     return s
 
 
-# def safe_string(s):
-#     '''Given string s, returns cleaned and simplified version.
-#     '''
-#     s = s.strip()
-#     s = s.replace(' ', '_')
-#     s = s.replace('-', '_')
-#     slist = []
-#     for c in s:
-#         if (ord(c) == 95                        # _ underscore
-#             or (ord(c) > 64 and ord(c) < 91)    # capital letters
-#             or (ord(c) > 96 and ord(c) < 123)): # small letters
-#             slist.append(c)
-#     s = ''.join(slist)
-#     return s
-
-
 def date_parse(ds):
     '''Parses string, ds, that represents a date and time,
     and returns the date object. Works with the following
@@ -118,6 +102,7 @@ def date_parse(ds):
         yy = int(d[2])
         return date(year=yy, month=mm, day=dd)
     return date.fromisoformat(d)
+
 
 # expected column structure in csv files:
 #  'FIPS',
@@ -258,9 +243,9 @@ df = df.sort_values(by=['location', 'province', 'file_date'], ignore_index=True)
 
 
 # -----------------------------------------------------------------
-# compute increases (daily numbers), and save location info
+# compute increases (daily numbers), and save list of locations
 
-prev_loc = None
+prev_lp = None
 prev_cases = prev_deaths = 0
 loc_prov = []
 
@@ -270,7 +255,7 @@ for i in range(len(df)):
     province = df.at[i, 'province']
     cases    = df.at[i, 'cases']
     deaths   = df.at[i, 'deaths']
-    loc = str(location) + str(province)
+    lp = str(location) + str(province)
 
     # some cases/deaths could be NaN; treat them as zero
     if math.isnan(cases):
@@ -278,19 +263,22 @@ for i in range(len(df)):
     if math.isnan(deaths):
         deaths = 0
 
-    if loc == prev_loc:
+    if lp == prev_lp:
         df.at[i, 'cases_inc'] = cases - prev_cases
         df.at[i, 'deaths_inc'] = deaths - prev_deaths
     else:
-        # save location to list and file
         loc_prov.append((location, province))
-        locf.write('{},{}\n'.format(location, province))
     
-    prev_loc = loc
+    prev_lp = lp
     prev_cases = cases
     prev_deaths = deaths
 
 print('[OK ] daily numbers computed')
+
+# save list of locations/provinces
+for (l, p) in loc_prov:
+    locf.write('{},{}\n'.format(l, p))
+
 print('[OK ] location names saved in file {}'.format(locf_fn))
 
 
@@ -307,23 +295,32 @@ print('[OK ] dataframe saved in file {}'.format(dst_fn))
 
 err_list = []
 err_loc_list = []
+to_remove = []
 
-for lp in loc_prov:
-    l = lp[0] # location
-    p = lp[1] # province
-
+for (l, p) in loc_prov:
     df1 = df[(df.location == l) & (df.province == p)]
     
     n = list(df1.cases_inc)
     n = [num for num in n if num > 0]
     n_len = len(n)
 
-    if n_len == 0:
+    if n_len < 50: # too few numbers, skip this location
+        to_remove.append((l, p))
         continue
 
     err = benford_error(n)
     err_list.append(err)
-    err_loc_list.append([l, p, n_len, err])
+    
+    # file name for the plot
+    if p == 'nan':
+        lp = l
+    else:
+        lp = l + '_' + p
+    lp = lp.replace(' ', '_')
+    lp = lp.lower()
+    plot_name = '{}.png'.format(lp)
+    
+    err_loc_list.append([l, p, n_len, err, plot_name])
 
 err_list.sort()
 
@@ -331,15 +328,20 @@ for i in range(len(err_loc_list)):
     e = err_loc_list[i][3]
     e_index = err_list.index(e)
     rank = e_index + 1
-    err_loc_list[i].append(rank)
+    err_loc_list[i].insert(0, rank)
 
-err_loc_list.sort(key=lambda elr: elr[4])
+# sort by rank
+err_loc_list.sort(key=lambda elr: elr[0])
 
 # write to file
 for el in err_loc_list:
     el = [str(e) for e in el]
     el = ','.join(el)
     rf.write(el + '\n')
+
+# remove locations with too few numbers
+for lp in to_remove:
+    loc_prov.remove(lp)
 
 print('[OK ] ranks computed and saved in file {}'.format(rfn))
 

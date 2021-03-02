@@ -29,7 +29,7 @@ rfn = 'usa_rank.csv'
 try: os.remove(rfn)
 except OSError: pass
 rf = open(rfn, 'a', encoding='utf8')
-rf.write('State,Numbers,Error,Rank\n')
+rf.write('Rank,State,Numbers,Error,File\n')
 
 # df = df.astype({
 #     'date': 'datetime64[ns]',
@@ -121,7 +121,7 @@ for s in states:
 
     err = benford_error(p)
     err_list.append(err)
-    err_state_list.append([s, p_len, err])
+    err_state_list.append([s, p_len, err, fname])
 
 
 # ------------------------------------------------------------------
@@ -133,9 +133,10 @@ for i in range(len(err_state_list)):
     e = err_state_list[i][2]
     e_index = err_list.index(e)
     rank = e_index + 1
-    err_state_list[i].append(rank)
+    err_state_list[i].insert(0, rank)
 
-err_state_list.sort(key=lambda esr: esr[3])
+# sort by rank
+err_state_list.sort(key=lambda esr: esr[0])
 
 # write to file
 for es in err_state_list:
