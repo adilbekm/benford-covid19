@@ -46,11 +46,10 @@ rfn = 'world_rank.csv'
 try: os.remove(rfn)
 except OSError: pass
 rf = open(rfn, 'a', encoding='utf8')
-rf.write('Rank,Location,Province,Numbers,Error,File\n')
+rf.write('Rank,Location,Province,Numbers,BenfordError,Plot\n')
 
 # get list of source files (csv files)
-p = os.getcwd()
-p += '/world_data'
+p = 'world_data'
 fns = os.listdir(p) # file names in world_data/
 
 
@@ -336,6 +335,7 @@ err_loc_list.sort(key=lambda elr: elr[0])
 # write to file
 for el in err_loc_list:
     el = [str(e) for e in el]
+    el[4] = el[4][0:7] # truncate error to shorter decimal
     el = ','.join(el)
     rf.write(el + '\n')
 
