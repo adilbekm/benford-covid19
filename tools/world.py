@@ -21,7 +21,6 @@ import pandas as pd
 from datetime import date
 from benford import benford_error, plot_benford_world
 
-
 print('[BEG] begin processing')
 
 
@@ -236,7 +235,7 @@ df = pd.DataFrame(dst_dict)
 print('[OK ] dataframe created with len={:,}'.format(len(df)))
 
 df = df[df.location != 'US']
-print('[OK ] usa data removed, remaining len={:,}'.format(len(df)))
+print('[OK ] USA data removed, remaining len={:,}'.format(len(df)))
 
 df = df.sort_values(by=['location', 'province', 'file_date'], ignore_index=True)
 
@@ -278,7 +277,7 @@ print('[OK ] daily numbers computed')
 for (l, p) in loc_prov:
     locf.write('{},{}\n'.format(l, p))
 
-print('[OK ] location names saved in file {}'.format(locf_fn))
+print('[OK ] {} locations saved in file {}'.format(len(loc_prov), locf_fn))
 
 
 # -----------------------------------------------------------------
@@ -344,13 +343,14 @@ for lp in to_remove:
     loc_prov.remove(lp)
 
 print('[OK ] ranks computed and saved in file {}'.format(rfn))
+print('[INF] {} locations skipped for insufficient data'.format(len(to_remove)))
 
 
 # -----------------------------------------------------------------
 # create benford plots for all locations, and save in png files
 # use column 'cases_inc', i.e. daily positive cases
 
-print('[INF] creating plots...')
+print('[INF] creating {} plots..'.format(len(loc_prov)))
 
 plot_benford_world(df, loc_prov)
 

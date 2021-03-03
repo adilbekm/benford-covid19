@@ -8,9 +8,11 @@ Numbers that represent real-life events follow a certain regularity. Specificall
 
 ### How does it apply to COVID-19 reports?
 
-COVID-19 reports are made of numbers just like financial reports, and that makes it possible to apply Benford's Law. I obtained the daily positive case numbers for the U.S. (from [Covid Tracking Project](https://covidtracking.com/)) and countries around the world (from [Johns Hopkins University](https://github.com/CSSEGISandData/COVID-19)). For each location, I computed the frequency of numbers 1 to 9 in the first digit of the positive case numbers, and compared it the Benford frequency — the difference is the Benford error. I used this error to rank the locations from best (smallest error) to worst (largest error), and created plots for each location that show the error from Benford visually.
+COVID-19 reports are made of numbers just like any other reports created by people, and that makes it possible to apply Benford's Law. I obtained the daily positive case numbers for the U.S. (from [Covid Tracking Project](https://covidtracking.com/)) and countries around the world (from [Johns Hopkins University](https://github.com/CSSEGISandData/COVID-19)). For example, England, UK has recently reported the following positive cases of COVID-19 per day: 10296, 8964, 8408, 9420, 7292, 8644, 8623, 7393, 6527, 5080. Having collected these numbers by location, I computed the frequency of numbers 1 to 9 in the first digit of the case numbers and compared it the Benford frequency to get the **Benford error**—the difference between the actual frequency and the frequency expected by Benford's Law. This error tells how good or bad the data for the location is.
 
 ### What are the results?
+
+Using the Benford error, I ranked the locations from best (smallest error) to worst (largest error), and created plots for each location that show the error visually. 
 
 `usa_rank.csv` — Use this file to see how each U.S. state or territory ranks from best to worst, based on how their COVID-19 case numbers fit into Benford's Law. The last column has the file name with the Benford plot for the location.
 
@@ -26,13 +28,13 @@ COVID-19 reports are made of numbers just like financial reports, and that makes
 
 `world_data/` — Folder with original COVID-19 data for the world from [Johns Hopkins University](https://github.com/CSSEGISandData/COVID-19).
 
-`extra/world.csv` — File with the world data in a more concise way than the original data. 
+`extra/world.csv` — A version of the world data combined into a single file, showing the data in a more concise way than the original data. 
 
 ### How to interpret the results?
 
-Small errors mean the reported cases are likely to be true and accurate, and large errors indicate increased inaccuracy. Large errors can be a sign of insufficient testing, misreporting, or direct falsification.
+Small errors mean the reported cases are likely to be true and accurate, and large errors indicate inaccuracy. Large errors can be a sign of insufficient testing, misreporting, or direct falsification.
 
-For the U.S., the error ranges from 0.08 for Oregon to 0.55 for New Jersey. For the world, the error ranges from 0.06 for Jordan to 1.05 for Mordovia, Russia.
+For the U.S., the error ranges from 0.09 for Oregon to 0.55 for New Jersey. For the world, the error ranges from 0.06 for Jordan to 1.05 for Mordovia, Russia.
 
 Example of small error (good Benford fit):
 
@@ -42,13 +44,15 @@ Example of large error (bad Benford fit):
 
 ![Tajikistan][plt2]
 
+### What time period is covered? How many numbers?
+
+The data is for the period from the beginning of COVID-19 reporting to March 2, 2021, so about 1 year of data or 365 numbers per location, 725 locations (55 for the U.S. and 670 for the rest of the world). The exact number of numbers (no pun intended) used varies by location because they didn't start reporting at the same time. It also varies because zeros and negative numbers are unusable and were dropped. The actual number of numbers used for Benford-ness is included in the outputs so the reader can take this metric into account. About 100 locations were excluded from the ranking because they had too few numbers (less than 50 usable numbers). Typically, these are small territories or places like cruise ships.  
 
 ---
 
+For questions or comments, please email <adilbekm@yahoo.com>
 
-For questions or comments, please email <adilbekm@yahoo.com>.
-
-February 28, 2021
+March 2, 2021
 
 [plt1]: world_output/australia_new_south_wales.png
 [plt2]: world_output/tajikistan.png

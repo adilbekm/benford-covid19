@@ -1,671 +1,671 @@
 Rank,Location,Province,Numbers,BenfordError,Plot
-1,Jordan,nan,344,0.06388,jordan.png
-2,Malawi,nan,283,0.06585,malawi.png
-3,Ukraine,Sumy Oblast,265,0.07552,ukraine_sumy_oblast.png
-4,Australia,New South Wales,328,0.07631,australia_new_south_wales.png
-5,Netherlands,Aruba,246,0.08209,netherlands_aruba.png
-6,Brazil,Maranhao,276,0.08386,brazil_maranhao.png
-7,Peru,Pasco,217,0.09048,peru_pasco.png
-8,Namibia,nan,273,0.09232,namibia.png
-9,Japan,Miyagi,225,0.09291,japan_miyagi.png
-10,Germany,Thuringen,275,0.09514,germany_thuringen.png
-11,Spain,C Valenciana,209,0.10019,spain_c_valenciana.png
-12,Peru,Cajamarca,216,0.10346,peru_cajamarca.png
-13,United Kingdom,Wales,254,0.10591,united_kingdom_wales.png
-14,Mali,nan,325,0.10595,mali.png
-15,Russia,Altai Republic,271,0.10658,russia_altai_republic.png
-16,India,Nagaland,242,0.10702,india_nagaland.png
-17,United Kingdom,Gibraltar,249,0.10739,united_kingdom_gibraltar.png
-18,Austria,nan,366,0.10775,austria.png
-19,Spain,Andalusia,208,0.10867,spain_andalusia.png
-20,India,Arunachal Pradesh,227,0.11184,india_arunachal_pradesh.png
+1,Jordan,nan,346,0.06177,jordan.png
+2,Malawi,nan,285,0.06692,malawi.png
+3,Ukraine,Sumy Oblast,267,0.06704,ukraine_sumy_oblast.png
+4,Australia,New South Wales,330,0.07006,australia_new_south_wales.png
+5,Netherlands,Aruba,248,0.07481,netherlands_aruba.png
+6,Germany,Thuringen,277,0.08863,germany_thuringen.png
+7,Brazil,Maranhao,278,0.08954,brazil_maranhao.png
+8,Peru,Pasco,217,0.09048,peru_pasco.png
+9,Japan,Miyagi,227,0.09079,japan_miyagi.png
+10,Namibia,nan,275,0.09091,namibia.png
+11,Peru,Cajamarca,216,0.10346,peru_cajamarca.png
+12,India,Nagaland,243,0.10355,india_nagaland.png
+13,Spain,C Valenciana,210,0.10365,spain_c_valenciana.png
+14,United Kingdom,Wales,256,0.10462,united_kingdom_wales.png
+15,Russia,Altai Republic,273,0.10645,russia_altai_republic.png
+16,Austria,nan,368,0.10944,austria.png
+17,United Kingdom,Gibraltar,250,0.10951,united_kingdom_gibraltar.png
+18,Germany,Sachsen,272,0.11040,germany_sachsen.png
+19,Mali,nan,327,0.11042,mali.png
+20,Spain,Andalusia,209,0.11120,spain_andalusia.png
 21,Niger,nan,246,0.11303,niger.png
-22,Hungary,nan,355,0.11309,hungary.png
-23,Germany,Sachsen,270,0.11355,germany_sachsen.png
-24,Lithuania,nan,354,0.11528,lithuania.png
-25,Israel,nan,364,0.11634,israel.png
-26,Czechia,nan,352,0.11727,czechia.png
-27,Spain,Navarra,204,0.11750,spain_navarra.png
-28,Colombia,Cordoba,262,0.11761,colombia_cordoba.png
-29,Colombia,San Andres y Providencia,197,0.12097,colombia_san_andres_y_providencia.png
-30,Singapore,nan,389,0.12103,singapore.png
-31,Japan,Hiroshima,212,0.12122,japan_hiroshima.png
-32,Colombia,Amazonas,213,0.12206,colombia_amazonas.png
+22,Spain,Navarra,205,0.11405,spain_navarra.png
+23,India,Arunachal Pradesh,228,0.11509,india_arunachal_pradesh.png
+24,Lithuania,nan,356,0.11598,lithuania.png
+25,Japan,Hiroshima,213,0.11618,japan_hiroshima.png
+26,Czechia,nan,354,0.11621,czechia.png
+27,Singapore,nan,391,0.11627,singapore.png
+28,Israel,nan,366,0.11805,israel.png
+29,Hungary,nan,357,0.11934,hungary.png
+30,Colombia,Amazonas,215,0.12089,colombia_amazonas.png
+31,Italy,Veneto,290,0.12136,italy_veneto.png
+32,Netherlands,Curacao,207,0.12328,netherlands_curacao.png
 33,Peru,Apurimac,216,0.12341,peru_apurimac.png
-34,Japan,Ibaraki,239,0.12525,japan_ibaraki.png
-35,Netherlands,Curacao,205,0.12606,netherlands_curacao.png
-36,Peru,Puno,215,0.12764,peru_puno.png
-37,Uganda,nan,312,0.12770,uganda.png
-38,Italy,Veneto,288,0.12773,italy_veneto.png
-39,Peru,Arequipa,216,0.12909,peru_arequipa.png
-40,Saint Lucia,nan,115,0.12957,saint_lucia.png
-41,Peru,Amazonas,215,0.12975,peru_amazonas.png
-42,France,Mayotte,158,0.13041,france_mayotte.png
-43,Germany,Berlin,288,0.13054,germany_berlin.png
-44,Norway,nan,361,0.13070,norway.png
-45,Chile,Tarapaca,279,0.13190,chile_tarapaca.png
-46,Colombia,Arauca,229,0.13323,colombia_arauca.png
-47,Ukraine,Zhytomyr Oblast,269,0.13399,ukraine_zhytomyr_oblast.png
-48,Finland,nan,356,0.13507,finland.png
+34,Japan,Ibaraki,241,0.12348,japan_ibaraki.png
+35,Norway,nan,363,0.12398,norway.png
+36,Colombia,San Andres y Providencia,198,0.12466,colombia_san_andres_y_providencia.png
+37,Colombia,Cordoba,264,0.12472,colombia_cordoba.png
+38,Peru,Puno,215,0.12764,peru_puno.png
+39,Chile,Tarapaca,281,0.12830,chile_tarapaca.png
+40,Germany,Berlin,290,0.12879,germany_berlin.png
+41,Peru,Arequipa,216,0.12909,peru_arequipa.png
+42,Peru,Amazonas,215,0.12975,peru_amazonas.png
+43,Eswatini,nan,321,0.13009,eswatini.png
+44,France,Mayotte,159,0.13217,france_mayotte.png
+45,Uganda,nan,314,0.13219,uganda.png
+46,Colombia,Arauca,231,0.13357,colombia_arauca.png
+47,Georgia,nan,357,0.13409,georgia.png
+48,Finland,nan,358,0.13495,finland.png
 49,Bahamas,nan,220,0.13545,bahamas.png
-50,New Zealand,nan,257,0.13564,new_zealand.png
-51,Colombia,Choco,257,0.13565,colombia_choco.png
-52,Sweden,Orebro,159,0.13566,sweden_orebro.png
-53,Spain,Ceuta,149,0.13619,spain_ceuta.png
-54,Eswatini,nan,319,0.13642,eswatini.png
-55,Armenia,nan,353,0.13774,armenia.png
-56,Japan,Gifu,219,0.13834,japan_gifu.png
-57,Kyrgyzstan,nan,313,0.13886,kyrgyzstan.png
-58,Italy,Sardegna,251,0.13895,italy_sardegna.png
-59,Ukraine,Chernihiv Oblast,268,0.13925,ukraine_chernihiv_oblast.png
-60,Georgia,nan,355,0.13933,georgia.png
-61,Mexico,Tlaxcala,280,0.13995,mexico_tlaxcala.png
-62,Zambia,nan,288,0.14236,zambia.png
-63,Japan,Shizuoka,220,0.14339,japan_shizuoka.png
-64,Peru,Tacna,215,0.14343,peru_tacna.png
-65,Colombia,Cesar,263,0.14413,colombia_cesar.png
-66,Japan,Yamaguchi,161,0.14497,japan_yamaguchi.png
-67,Sweden,Vastra Gotaland,161,0.14678,sweden_vastra_gotaland.png
-68,Sudan,nan,253,0.14765,sudan.png
-69,United Kingdom,Channel Islands,211,0.14855,united_kingdom_channel_islands.png
-70,Spain,Galicia,203,0.15049,spain_galicia.png
-71,India,Jharkhand,256,0.15063,india_jharkhand.png
-72,Japan,Shiga,219,0.15078,japan_shiga.png
-73,Maldives,nan,329,0.15079,maldives.png
-74,Comoros,nan,135,0.15113,comoros.png
-75,Australia,Victoria,271,0.15175,australia_victoria.png
-76,Brazil,Sergipe,276,0.15176,brazil_sergipe.png
-77,Iceland,nan,287,0.15185,iceland.png
+50,Sweden,Orebro,159,0.13566,sweden_orebro.png
+51,Ukraine,Chernihiv Oblast,270,0.13577,ukraine_chernihiv_oblast.png
+52,New Zealand,nan,259,0.13663,new_zealand.png
+53,Japan,Shizuoka,222,0.13667,japan_shizuoka.png
+54,Italy,Sardegna,253,0.13716,italy_sardegna.png
+55,Colombia,Choco,259,0.13724,colombia_choco.png
+56,Mexico,Tlaxcala,282,0.13863,mexico_tlaxcala.png
+57,Saint Lucia,nan,116,0.13871,saint_lucia.png
+58,Armenia,nan,355,0.13947,armenia.png
+59,Zambia,nan,290,0.13973,zambia.png
+60,Kyrgyzstan,nan,315,0.14135,kyrgyzstan.png
+61,Colombia,Atlantico,265,0.14250,colombia_atlantico.png
+62,Ukraine,Zhytomyr Oblast,271,0.14332,ukraine_zhytomyr_oblast.png
+63,Peru,Tacna,215,0.14343,peru_tacna.png
+64,Comoros,nan,136,0.14426,comoros.png
+65,Japan,Gifu,221,0.14429,japan_gifu.png
+66,Spain,Ceuta,150,0.14460,spain_ceuta.png
+67,Nepal,nan,318,0.14640,nepal.png
+68,Sweden,Vastra Gotaland,161,0.14678,sweden_vastra_gotaland.png
+69,Spain,Catalonia,209,0.14759,spain_catalonia.png
+70,Angola,nan,297,0.14788,angola.png
+71,Colombia,Cesar,265,0.14822,colombia_cesar.png
+72,Japan,Tochigi,223,0.14831,japan_tochigi.png
+73,Brazil,Sergipe,278,0.14978,brazil_sergipe.png
+74,Japan,Shiga,221,0.14982,japan_shiga.png
+75,India,Jharkhand,258,0.15015,india_jharkhand.png
+76,Japan,Yamaguchi,162,0.15019,japan_yamaguchi.png
+77,Australia,Victoria,271,0.15175,australia_victoria.png
 78,Peru,Madre de Dios,214,0.15212,peru_madre_de_dios.png
-79,Colombia,Atlantico,263,0.15231,colombia_atlantico.png
-80,Japan,Tochigi,221,0.15232,japan_tochigi.png
-81,United Kingdom,England,258,0.15277,united_kingdom_england.png
-82,Rwanda,nan,340,0.15284,rwanda.png
-83,Spain,Asturias,179,0.15300,spain_asturias.png
-84,Angola,nan,295,0.15313,angola.png
-85,Chile,Los Lagos,280,0.15314,chile_los_lagos.png
-86,Spain,Catalonia,208,0.15316,spain_catalonia.png
-87,Peru,Junin,217,0.15332,peru_junin.png
-88,Moldova,nan,351,0.15342,moldova.png
-89,Ukraine,Luhansk Oblast,242,0.15392,ukraine_luhansk_oblast.png
-90,Djibouti,nan,268,0.15429,djibouti.png
-91,Belize,nan,206,0.15474,belize.png
-92,Morocco,nan,356,0.15530,morocco.png
-93,Sweden,Dalarna,162,0.15531,sweden_dalarna.png
-94,Nepal,nan,316,0.15560,nepal.png
-95,Haiti,nan,252,0.15608,haiti.png
-96,India,Punjab,256,0.15662,india_punjab.png
-97,Peru,Ayacucho,217,0.15726,peru_ayacucho.png
-98,China,Shanghai,321,0.15806,china_shanghai.png
-99,Spain,Cantabria,190,0.15831,spain_cantabria.png
-100,Cote dIvoire,nan,332,0.15868,cote_divoire.png
-101,Colombia,Casanare,247,0.15907,colombia_casanare.png
-102,San Marino,nan,175,0.15959,san_marino.png
-103,France,Reunion,212,0.16032,france_reunion.png
-104,India,Tripura,235,0.16074,india_tripura.png
-105,Trinidad and Tobago,nan,248,0.16119,trinidad_and_tobago.png
-106,Peru,Ica,216,0.16153,peru_ica.png
-107,Japan,Fukuoka,265,0.16261,japan_fukuoka.png
-108,Spain,Castilla La Mancha,208,0.16313,spain_castilla_la_mancha.png
-109,Ukraine,Kiev,271,0.16329,ukraine_kiev.png
-110,Spain,Extremadura,204,0.16364,spain_extremadura.png
-111,Sierra Leone,nan,286,0.16463,sierra_leone.png
-112,Germany,Sachsen Anhalt,261,0.16497,germany_sachsen_anhalt.png
-113,Mexico,Chihuahua,281,0.16530,mexico_chihuahua.png
-114,Chad,nan,274,0.16563,chad.png
-115,Ukraine,Zaporizhia Oblast,266,0.16630,ukraine_zaporizhia_oblast.png
-116,China,Hong Kong,311,0.16634,china_hong_kong.png
-117,Canada,Alberta,296,0.16678,canada_alberta.png
-118,Germany,Bayern,286,0.16717,germany_bayern.png
-119,Peru,Moquegua,215,0.16720,peru_moquegua.png
-120,Germany,Unknown,137,0.16733,germany_unknown.png
-121,Spain,La Rioja,190,0.16771,spain_la_rioja.png
+79,United Kingdom,Channel Islands,212,0.15235,united_kingdom_channel_islands.png
+80,Moldova,nan,353,0.15239,moldova.png
+81,United Kingdom,England,260,0.15265,united_kingdom_england.png
+82,Sudan,nan,255,0.15274,sudan.png
+83,Colombia,Casanare,249,0.15296,colombia_casanare.png
+84,Rwanda,nan,342,0.15330,rwanda.png
+85,Peru,Junin,217,0.15332,peru_junin.png
+86,China,Shanghai,323,0.15335,china_shanghai.png
+87,Sweden,Dalarna,162,0.15531,sweden_dalarna.png
+88,Japan,Fukuoka,267,0.15543,japan_fukuoka.png
+89,Iceland,nan,288,0.15550,iceland.png
+90,Spain,Extremadura,205,0.15575,spain_extremadura.png
+91,Maldives,nan,331,0.15586,maldives.png
+92,Chile,Los Lagos,282,0.15593,chile_los_lagos.png
+93,India,Punjab,258,0.15658,india_punjab.png
+94,Spain,Asturias,180,0.15704,spain_asturias.png
+95,Spain,Galicia,204,0.15710,spain_galicia.png
+96,Peru,Ayacucho,217,0.15726,peru_ayacucho.png
+97,Cote dIvoire,nan,334,0.15731,cote_divoire.png
+98,Djibouti,nan,270,0.15761,djibouti.png
+99,Haiti,nan,253,0.15815,haiti.png
+100,Belize,nan,207,0.15878,belize.png
+101,Morocco,nan,358,0.15920,morocco.png
+102,Trinidad and Tobago,nan,250,0.15945,trinidad_and_tobago.png
+103,Ukraine,Kiev,273,0.15974,ukraine_kiev.png
+104,France,Reunion,212,0.16032,france_reunion.png
+105,China,Hong Kong,313,0.16120,china_hong_kong.png
+106,San Marino,nan,176,0.16134,san_marino.png
+107,Peru,Ica,216,0.16153,peru_ica.png
+108,Ukraine,Luhansk Oblast,244,0.16178,ukraine_luhansk_oblast.png
+109,India,Tripura,236,0.16269,india_tripura.png
+110,Spain,Cantabria,191,0.16327,spain_cantabria.png
+111,Germany,Sachsen Anhalt,263,0.16336,germany_sachsen_anhalt.png
+112,Andorra,nan,228,0.16405,andorra.png
+113,Sierra Leone,nan,286,0.16463,sierra_leone.png
+114,Canada,Alberta,298,0.16474,canada_alberta.png
+115,India,Odisha,258,0.16567,india_odisha.png
+116,Zimbabwe,nan,295,0.16671,zimbabwe.png
+117,Liberia,nan,212,0.16693,liberia.png
+118,Peru,Moquegua,215,0.16720,peru_moquegua.png
+119,Chad,nan,275,0.16744,chad.png
+120,Ukraine,Odessa Oblast,272,0.16782,ukraine_odessa_oblast.png
+121,Botswana,nan,85,0.16801,botswana.png
 122,Sweden,Gavleborg,158,0.16831,sweden_gavleborg.png
-123,Greece,nan,358,0.16866,greece.png
-124,Spain,Baleares,209,0.16969,spain_baleares.png
-125,Pakistan,Azad Jammu and Kashmir,249,0.16971,pakistan_azad_jammu_and_kashmir.png
-126,Japan,Fukushima,176,0.17100,japan_fukushima.png
-127,Sweden,Jamtland Harjedalen,149,0.17116,sweden_jamtland_harjedalen.png
-128,Andorra,nan,226,0.17174,andorra.png
-129,Liberia,nan,211,0.17175,liberia.png
-130,Sweden,Vastmanland,161,0.17180,sweden_vastmanland.png
-131,India,Odisha,256,0.17258,india_odisha.png
-132,Spain,Murcia,196,0.17318,spain_murcia.png
-133,Zimbabwe,nan,293,0.17337,zimbabwe.png
-134,Colombia,Guaviare,200,0.17350,colombia_guaviare.png
-135,Ukraine,Odessa Oblast,270,0.17375,ukraine_odessa_oblast.png
-136,Sweden,Stockholm,161,0.17400,sweden_stockholm.png
-137,Ireland,nan,358,0.17405,ireland.png
-138,Peru,Huanuco,217,0.17518,peru_huanuco.png
-139,India,Meghalaya,229,0.17523,india_meghalaya.png
-140,Japan,Tokyo,274,0.17544,japan_tokyo.png
-141,Colombia,Tolima,262,0.17614,colombia_tolima.png
-142,Sweden,Norrbotten,154,0.17661,sweden_norrbotten.png
-143,India,Uttar Pradesh,256,0.17686,india_uttar_pradesh.png
-144,Monaco,nan,223,0.17688,monaco.png
-145,India,Mizoram,219,0.17709,india_mizoram.png
-146,Peru,Huancavelica,217,0.17744,peru_huancavelica.png
-147,Ukraine,Kirovohrad Oblast,258,0.17781,ukraine_kirovohrad_oblast.png
-148,Ghana,nan,255,0.17851,ghana.png
-149,Burundi,nan,170,0.17871,burundi.png
-150,Dominican Republic,nan,347,0.17889,dominican_republic.png
-151,Botswana,nan,84,0.17893,botswana.png
-152,Latvia,nan,338,0.17905,latvia.png
-153,Canada,British Columbia,254,0.17970,canada_british_columbia.png
-154,Sweden,Uppsala,163,0.18014,sweden_uppsala.png
-155,Japan,Kumamoto,206,0.18115,japan_kumamoto.png
-156,Pakistan,Balochistan,247,0.18118,pakistan_balochistan.png
-157,Pakistan,Sindh,250,0.18157,pakistan_sindh.png
-158,Ukraine,Mykolaiv Oblast,259,0.18178,ukraine_mykolaiv_oblast.png
-159,Switzerland,nan,315,0.18226,switzerland.png
-160,Brazil,Rio Grande do Norte,270,0.18256,brazil_rio_grande_do_norte.png
-161,Malaysia,nan,373,0.18264,malaysia.png
-162,India,Himachal Pradesh,257,0.18306,india_himachal_pradesh.png
-163,France,French Guiana,257,0.18308,france_french_guiana.png
-164,Mauritania,nan,292,0.18317,mauritania.png
-165,Italy,Piemonte,288,0.18387,italy_piemonte.png
-166,Colombia,Putumayo,245,0.18403,colombia_putumayo.png
-167,Afghanistan,nan,353,0.18456,afghanistan.png
-168,Germany,Brandenburg,274,0.18531,germany_brandenburg.png
-169,Colombia,Bolivar,263,0.18774,colombia_bolivar.png
-170,Ukraine,Rivne Oblast,271,0.18776,ukraine_rivne_oblast.png
-171,Ukraine,Poltava Oblast,258,0.18790,ukraine_poltava_oblast.png
-172,Spain,Canarias,196,0.18885,spain_canarias.png
-173,Jamaica,nan,323,0.18914,jamaica.png
-174,Italy,PA Bolzano,259,0.18938,italy_pa_bolzano.png
-175,Ukraine,Cherkasy Oblast,266,0.18997,ukraine_cherkasy_oblast.png
-176,Uruguay,nan,335,0.19051,uruguay.png
-177,Japan,nan,106,0.19055,japan.png
-178,Mexico,Chiapas,278,0.19085,mexico_chiapas.png
-179,Suriname,nan,274,0.19185,suriname.png
-180,Belgium,nan,250,0.19186,belgium.png
-181,Colombia,Sucre,260,0.19251,colombia_sucre.png
-182,Somalia,nan,150,0.19260,somalia.png
-183,Vietnam,nan,269,0.19296,vietnam.png
-184,Japan,Osaka,258,0.19306,japan_osaka.png
-185,Central African Republic,nan,137,0.19431,central_african_republic.png
-186,Bosnia and Herzegovina,nan,315,0.19459,bosnia_and_herzegovina.png
-187,Brazil,Santa Catarina,275,0.19478,brazil_santa_catarina.png
-188,Denmark,nan,333,0.19561,denmark.png
-189,Togo,nan,321,0.19651,togo.png
-190,Spain,Madrid,210,0.19794,spain_madrid.png
+123,India,Meghalaya,231,0.16850,india_meghalaya.png
+124,Spain,Murcia,197,0.16873,spain_murcia.png
+125,Germany,Bayern,288,0.16877,germany_bayern.png
+126,Ukraine,Kirovohrad Oblast,260,0.16878,ukraine_kirovohrad_oblast.png
+127,Pakistan,Azad Jammu and Kashmir,251,0.16897,pakistan_azad_jammu_and_kashmir.png
+128,Colombia,Guaviare,202,0.16934,colombia_guaviare.png
+129,Spain,Castilla La Mancha,209,0.17003,spain_castilla_la_mancha.png
+130,Monaco,nan,225,0.17086,monaco.png
+131,Spain,La Rioja,191,0.17113,spain_la_rioja.png
+132,Sweden,Jamtland Harjedalen,149,0.17116,sweden_jamtland_harjedalen.png
+133,Sweden,Vastmanland,161,0.17180,sweden_vastmanland.png
+134,Colombia,Tolima,264,0.17198,colombia_tolima.png
+135,India,Uttar Pradesh,258,0.17208,india_uttar_pradesh.png
+136,Mexico,Chihuahua,283,0.17234,mexico_chihuahua.png
+137,Spain,Baleares,210,0.17310,spain_baleares.png
+138,Greece,nan,360,0.17353,greece.png
+139,Sweden,Stockholm,161,0.17400,sweden_stockholm.png
+140,Latvia,nan,340,0.17424,latvia.png
+141,Ukraine,Zaporizhia Oblast,268,0.17449,ukraine_zaporizhia_oblast.png
+142,Peru,Huanuco,217,0.17518,peru_huanuco.png
+143,Japan,Fukushima,178,0.17521,japan_fukushima.png
+144,Ghana,nan,256,0.17572,ghana.png
+145,Canada,British Columbia,255,0.17572,canada_british_columbia.png
+146,Burundi,nan,172,0.17638,burundi.png
+147,Sweden,Norrbotten,154,0.17661,sweden_norrbotten.png
+148,Peru,Huancavelica,217,0.17744,peru_huancavelica.png
+149,Germany,Unknown,139,0.17814,germany_unknown.png
+150,Colombia,Putumayo,247,0.17838,colombia_putumayo.png
+151,Somalia,nan,152,0.17839,somalia.png
+152,Switzerland,nan,316,0.17866,switzerland.png
+153,Ireland,nan,360,0.17927,ireland.png
+154,Dominican Republic,nan,349,0.17970,dominican_republic.png
+155,Japan,Tokyo,276,0.17993,japan_tokyo.png
+156,Sweden,Uppsala,163,0.18014,sweden_uppsala.png
+157,Ukraine,Mykolaiv Oblast,261,0.18029,ukraine_mykolaiv_oblast.png
+158,Spain,Canarias,197,0.18052,spain_canarias.png
+159,Japan,Kumamoto,208,0.18097,japan_kumamoto.png
+160,Pakistan,Balochistan,249,0.18128,pakistan_balochistan.png
+161,India,Mizoram,220,0.18162,india_mizoram.png
+162,Malaysia,nan,375,0.18175,malaysia.png
+163,India,Himachal Pradesh,259,0.18219,india_himachal_pradesh.png
+164,Germany,Brandenburg,276,0.18266,germany_brandenburg.png
+165,France,French Guiana,257,0.18308,france_french_guiana.png
+166,Brazil,Rio Grande do Norte,272,0.18316,brazil_rio_grande_do_norte.png
+167,Colombia,Bolivar,265,0.18366,colombia_bolivar.png
+168,Ukraine,Poltava Oblast,260,0.18367,ukraine_poltava_oblast.png
+169,Afghanistan,nan,355,0.18378,afghanistan.png
+170,Suriname,nan,276,0.18429,suriname.png
+171,Jamaica,nan,325,0.18483,jamaica.png
+172,Pakistan,Sindh,252,0.18563,pakistan_sindh.png
+173,Italy,Piemonte,290,0.18603,italy_piemonte.png
+174,Ukraine,Rivne Oblast,273,0.18703,ukraine_rivne_oblast.png
+175,Togo,nan,323,0.18810,togo.png
+176,Mexico,Chiapas,280,0.18813,mexico_chiapas.png
+177,Mauritania,nan,294,0.18861,mauritania.png
+178,Ukraine,Cherkasy Oblast,268,0.18879,ukraine_cherkasy_oblast.png
+179,Italy,PA Bolzano,261,0.18976,italy_pa_bolzano.png
+180,Japan,Saga,158,0.19053,japan_saga.png
+181,Japan,nan,106,0.19055,japan.png
+182,Belgium,nan,250,0.19186,belgium.png
+183,Central African Republic,nan,137,0.19431,central_african_republic.png
+184,Bosnia and Herzegovina,nan,315,0.19459,bosnia_and_herzegovina.png
+185,Colombia,Caqueta,239,0.19525,colombia_caqueta.png
+186,Equatorial Guinea,nan,100,0.19577,equatorial_guinea.png
+187,Colombia,Risaralda,262,0.19633,colombia_risaralda.png
+188,United Arab Emirates,nan,358,0.19640,united_arab_emirates.png
+189,Vietnam,nan,270,0.19671,vietnam.png
+190,Brazil,Santa Catarina,277,0.19772,brazil_santa_catarina.png
 191,Cameroon,nan,140,0.19831,cameroon.png
 192,Peru,Cusco,217,0.19848,peru_cusco.png
-193,Colombia,Caqueta,237,0.19869,colombia_caqueta.png
-194,Colombia,Risaralda,260,0.20044,colombia_risaralda.png
-195,Eritrea,nan,107,0.20080,eritrea.png
-196,Mexico,Sonora,282,0.20081,mexico_sonora.png
-197,El Salvador,nan,267,0.20131,el_salvador.png
-198,Kosovo,nan,246,0.20187,kosovo.png
-199,United Arab Emirates,nan,356,0.20318,united_arab_emirates.png
-200,Sweden,Blekinge,150,0.20321,sweden_blekinge.png
-201,Ukraine,Kherson Oblast,237,0.20346,ukraine_kherson_oblast.png
-202,Croatia,nan,346,0.20357,croatia.png
-203,Congo Brazzaville,nan,82,0.20411,congo_brazzaville.png
-204,Gambia,nan,176,0.20421,gambia.png
-205,Brazil,Rondonia,272,0.20436,brazil_rondonia.png
-206,Brazil,nan,76,0.20483,brazil.png
-207,Chile,Aysen,220,0.20497,chile_aysen.png
-208,Kenya,nan,343,0.20523,kenya.png
-209,Japan,Saga,156,0.20579,japan_saga.png
-210,Equatorial Guinea,nan,99,0.20704,equatorial_guinea.png
-211,Italy,Basilicata,214,0.20709,italy_basilicata.png
-212,Oman,nan,285,0.20715,oman.png
-213,Romania,nan,360,0.20761,romania.png
-214,Japan,Wakayama,179,0.20795,japan_wakayama.png
-215,Mexico,Durango,282,0.20801,mexico_durango.png
-216,Pakistan,Islamabad,250,0.20842,pakistan_islamabad.png
-217,Pakistan,nan,94,0.20956,pakistan.png
-218,Mexico,Colima,281,0.20958,mexico_colima.png
-219,Peru,Tumbes,214,0.21013,peru_tumbes.png
-220,India,Bihar,257,0.21147,india_bihar.png
-221,Canada,Ontario,356,0.21148,canada_ontario.png
-222,Lebanon,nan,357,0.21158,lebanon.png
-223,Colombia,Boyaca,260,0.21265,colombia_boyaca.png
-224,Bulgaria,nan,350,0.21302,bulgaria.png
-225,Brazil,Ceara,267,0.21429,brazil_ceara.png
-226,Italy,Molise,221,0.21491,italy_molise.png
-227,Seychelles,nan,94,0.21597,seychelles.png
-228,India,Maharashtra,255,0.21830,india_maharashtra.png
-229,Netherlands,Sint Maarten,209,0.21847,netherlands_sint_maarten.png
-230,Chile,OHiggins,280,0.21852,chile_ohiggins.png
-231,France,nan,341,0.21878,france.png
-232,Japan,Miyazaki,152,0.21912,japan_miyazaki.png
-233,China,Guangdong,297,0.21948,china_guangdong.png
-234,India,Goa,254,0.21986,india_goa.png
-235,France,Guadeloupe,79,0.21987,france_guadeloupe.png
-236,Canada,Manitoba,288,0.22011,canada_manitoba.png
-237,Ukraine,Volyn Oblast,271,0.22050,ukraine_volyn_oblast.png
-238,Germany,Mecklenburg Vorpommern,240,0.22088,germany_mecklenburg_vorpommern.png
-239,Mexico,Puebla,282,0.22141,mexico_puebla.png
-240,Japan,Ehime,118,0.22226,japan_ehime.png
-241,Chile,Atacama,279,0.22305,chile_atacama.png
-242,China,Liaoning,115,0.22312,china_liaoning.png
-243,Sweden,Vasternorrland,157,0.22324,sweden_vasternorrland.png
-244,Mexico,Aguascalientes,277,0.22339,mexico_aguascalientes.png
-245,South Korea,nan,390,0.22381,south_korea.png
-246,Germany,Niedersachsen,288,0.22383,germany_niedersachsen.png
-247,Colombia,Caldas,255,0.22483,colombia_caldas.png
-248,France,French Polynesia,137,0.22509,france_french_polynesia.png
-249,Sweden,Kalmar,161,0.22588,sweden_kalmar.png
-250,Serbia,nan,341,0.22623,serbia.png
-251,Slovenia,nan,340,0.22713,slovenia.png
-252,India,Delhi,257,0.22778,india_delhi.png
-253,Japan,Gunma,224,0.22833,japan_gunma.png
-254,Italy,Lombardia,289,0.22908,italy_lombardia.png
-255,Sweden,Kronoberg,157,0.22913,sweden_kronoberg.png
-256,Mexico,Veracruz,282,0.22918,mexico_veracruz.png
-257,Ukraine,Khmelnytskyi Oblast,262,0.22995,ukraine_khmelnytskyi_oblast.png
-258,Russia,Chukotka Autonomous Okrug,176,0.23004,russia_chukotka_autonomous_okrug.png
-259,India,Dadra and Nagar Haveli and Daman and Diu,199,0.23020,india_dadra_and_nagar_haveli_and_daman_and_diu.png
-260,Colombia,La Guajira,259,0.23114,colombia_la_guajira.png
-261,Chile,Los Rios,281,0.23195,chile_los_rios.png
-262,Russia,Pskov Oblast,271,0.23293,russia_pskov_oblast.png
-263,Estonia,nan,341,0.23310,estonia.png
-264,Spain,Pais Vasco,208,0.23321,spain_pais_vasco.png
-265,Italy,Liguria,288,0.23396,italy_liguria.png
-266,Russia,Kostroma Oblast,271,0.23499,russia_kostroma_oblast.png
-267,India,Chandigarh,256,0.23536,india_chandigarh.png
-268,Spain,Castilla y Leon,210,0.23567,spain_castilla_y_leon.png
-269,Japan,Kyoto,252,0.23595,japan_kyoto.png
-270,Thailand,nan,344,0.23652,thailand.png
-271,Japan,Yamanashi,170,0.23659,japan_yamanashi.png
-272,Chile,Antofagasta,281,0.23703,chile_antofagasta.png
-273,Canada,Nova Scotia,205,0.23730,canada_nova_scotia.png
-274,Lesotho,nan,130,0.23866,lesotho.png
-275,Indonesia,nan,357,0.23887,indonesia.png
-276,United Kingdom,Cayman Islands,124,0.23997,united_kingdom_cayman_islands.png
-277,Mexico,Tamaulipas,282,0.24043,mexico_tamaulipas.png
-278,Canada,Saskatchewan,322,0.24143,canada_saskatchewan.png
-279,Mexico,Campeche,282,0.24200,mexico_campeche.png
-280,Brazil,Tocantins,276,0.24230,brazil_tocantins.png
-281,Ukraine,Vinnytsia Oblast,271,0.24237,ukraine_vinnytsia_oblast.png
-282,Guyana,nan,284,0.24306,guyana.png
-283,Japan,Aomori,120,0.24375,japan_aomori.png
-284,Peru,Lima,216,0.24471,peru_lima.png
-285,Benin,nan,107,0.24585,benin.png
-286,Brazil,Bahia,276,0.24759,brazil_bahia.png
-286,Japan,Iwate,115,0.24759,japan_iwate.png
-288,India,nan,101,0.24897,india.png
-289,Colombia,Vichada,134,0.24910,colombia_vichada.png
-290,Luxembourg,nan,299,0.24977,luxembourg.png
-291,Mozambique,nan,315,0.24984,mozambique.png
-292,Sweden,Varmland,159,0.25050,sweden_varmland.png
-293,Japan,Hokkaido,273,0.25068,japan_hokkaido.png
-294,Mexico,Nayarit,281,0.25172,mexico_nayarit.png
-295,Nigeria,nan,347,0.25265,nigeria.png
-296,Russia,Kurgan Oblast,271,0.25314,russia_kurgan_oblast.png
-297,Japan,Niigata,159,0.25330,japan_niigata.png
-298,Ukraine,Donetsk Oblast,263,0.25380,ukraine_donetsk_oblast.png
-299,India,Manipur,257,0.25385,india_manipur.png
-300,Poland,nan,358,0.25398,poland.png
-301,Brazil,Minas Gerais,276,0.25407,brazil_minas_gerais.png
-302,Ukraine,Dnipropetrovsk Oblast,260,0.25506,ukraine_dnipropetrovsk_oblast.png
-303,Nicaragua,nan,57,0.25544,nicaragua.png
-304,South Sudan,nan,177,0.25669,south_sudan.png
-305,Spain,Aragon,207,0.25726,spain_aragon.png
-306,Germany,Nordrhein Westfalen,274,0.25743,germany_nordrhein_westfalen.png
-307,Peru,Callao,217,0.25748,peru_callao.png
-308,Burkina Faso,nan,287,0.25756,burkina_faso.png
-309,Guinea,nan,273,0.25827,guinea.png
-310,Italy,Toscana,289,0.25842,italy_toscana.png
-311,Sweden,Ostergotland,164,0.25886,sweden_ostergotland.png
-312,Netherlands,Overijssel,217,0.25943,netherlands_overijssel.png
-313,Sweden,Gotland,133,0.25955,sweden_gotland.png
-314,Germany,Rheinland Pfalz,288,0.25967,germany_rheinland_pfalz.png
-315,Algeria,nan,358,0.25975,algeria.png
-316,Sweden,Vasterbotten,145,0.26026,sweden_vasterbotten.png
-317,Japan,Kanagawa,269,0.26039,japan_kanagawa.png
-318,Italy,Friuli Venezia Giulia,268,0.26217,italy_friuli_venezia_giulia.png
-319,Saint Vincent and the Grenadines,nan,91,0.26266,saint_vincent_and_the_grenadines.png
-320,Russia,Samara Oblast,271,0.26350,russia_samara_oblast.png
-321,Japan,Kagoshima,204,0.26420,japan_kagoshima.png
-322,Germany,Baden Wurttemberg,267,0.26522,germany_baden_wurttemberg.png
-323,India,Andaman and Nicobar Islands,223,0.26606,india_andaman_and_nicobar_islands.png
-324,Slovakia,nan,347,0.26765,slovakia.png
-325,Japan,Saitama,265,0.26839,japan_saitama.png
-326,Chile,Nuble,279,0.26930,chile_nuble.png
-327,Senegal,nan,351,0.26964,senegal.png
-328,United Kingdom,Turks and Caicos Islands,158,0.26965,united_kingdom_turks_and_caicos_islands.png
-329,Colombia,Guainia,133,0.27012,colombia_guainia.png
-330,Netherlands,Flevoland,217,0.27064,netherlands_flevoland.png
-331,South Africa,nan,355,0.27165,south_africa.png
-332,Mexico,Queretaro,281,0.27173,mexico_queretaro.png
-333,Japan,Nagasaki,152,0.27200,japan_nagasaki.png
-334,Germany,Hessen,275,0.27230,germany_hessen.png
-335,Portugal,nan,357,0.27470,portugal.png
-336,Peru,Loreto,214,0.27699,peru_loreto.png
-337,Colombia,Narino,261,0.27722,colombia_narino.png
-338,Cyprus,nan,328,0.27758,cyprus.png
-339,Brazil,Amazonas,274,0.27791,brazil_amazonas.png
-340,Colombia,Norte de Santander,253,0.27794,colombia_norte_de_santander.png
-341,Peru,Piura,216,0.27843,peru_piura.png
-342,Spain,Melilla,148,0.27956,spain_melilla.png
-343,Sweden,Sormland,151,0.27975,sweden_sormland.png
-344,India,Sikkim,235,0.27980,india_sikkim.png
-345,France,Martinique,74,0.28036,france_martinique.png
-346,Russia,Tyva Republic,271,0.28075,russia_tyva_republic.png
-347,France,St Martin,56,0.28183,france_st_martin.png
-348,North Macedonia,nan,352,0.28366,north_macedonia.png
-349,Colombia,Huila,254,0.28406,colombia_huila.png
-350,Brazil,Goias,272,0.28512,brazil_goias.png
-351,Colombia,Cauca,263,0.28549,colombia_cauca.png
-352,Russia,Arkhangelsk Oblast,271,0.28661,russia_arkhangelsk_oblast.png
-353,Peru,Ucayali,216,0.28662,peru_ucayali.png
-354,Japan,Toyama,151,0.28713,japan_toyama.png
-355,Germany,Schleswig Holstein,258,0.28788,germany_schleswig_holstein.png
-356,Japan,Okayama,189,0.28794,japan_okayama.png
-357,Burma,nan,283,0.28875,burma.png
-358,Germany,nan,84,0.28947,germany.png
-359,Brazil,Roraima,273,0.28968,brazil_roraima.png
-360,Congo Kinshasa,nan,322,0.28982,congo_kinshasa.png
-361,Germany,Bremen,265,0.29009,germany_bremen.png
-362,Colombia,Quindio,247,0.29009,colombia_quindio.png
-363,Azerbaijan,nan,352,0.29019,azerbaijan.png
-364,Brazil,Rio de Janeiro,273,0.29171,brazil_rio_de_janeiro.png
-365,Japan,Aichi,246,0.29304,japan_aichi.png
-366,Kazakhstan,nan,335,0.29410,kazakhstan.png
-367,Italy,Abruzzo,269,0.29482,italy_abruzzo.png
-368,Japan,Tokushima,115,0.29541,japan_tokushima.png
-369,Netherlands,Groningen,217,0.29550,netherlands_groningen.png
-370,Ecuador,nan,336,0.29588,ecuador.png
-371,Gabon,nan,171,0.29591,gabon.png
-372,India,Andhra Pradesh,256,0.29637,india_andhra_pradesh.png
-373,Taiwan,nan,210,0.29729,taiwan.png
-374,Pakistan,Gilgit Baltistan,229,0.29806,pakistan_gilgit_baltistan.png
-375,West Bank and Gaza,nan,313,0.29822,west_bank_and_gaza.png
-376,Cabo Verde,nan,318,0.29845,cabo_verde.png
-377,Colombia,Capital District,264,0.29902,colombia_capital_district.png
-378,Mexico,Quintana Roo,281,0.30020,mexico_quintana_roo.png
-379,Liechtenstein,nan,186,0.30098,liechtenstein.png
-380,Ukraine,Kiev Oblast,271,0.30285,ukraine_kiev_oblast.png
-381,Brazil,Rio Grande do Sul,272,0.30311,brazil_rio_grande_do_sul.png
-382,Mexico,Mexico,282,0.30426,mexico_mexico.png
-383,Italy,Marche,271,0.30463,italy_marche.png
-384,India,Assam,255,0.30492,india_assam.png
-385,Brazil,Amapa,271,0.30568,brazil_amapa.png
-386,Mauritius,nan,99,0.30573,mauritius.png
-387,Ukraine,Chernivtsi Oblast,271,0.30685,ukraine_chernivtsi_oblast.png
-388,Mexico,Guanajuato,282,0.30902,mexico_guanajuato.png
-389,Ukraine,Zakarpattia Oblast,271,0.30907,ukraine_zakarpattia_oblast.png
-390,Netherlands,Unknown,176,0.31022,netherlands_unknown.png
-391,Sweden,Halland,162,0.31035,sweden_halland.png
-392,Brazil,Parana,272,0.31058,brazil_parana.png
-393,Japan,Port Quarantine,264,0.31103,japan_port_quarantine.png
-394,Madagascar,nan,204,0.31105,madagascar.png
-395,Russia,Ryazan Oblast,271,0.31116,russia_ryazan_oblast.png
-396,Brazil,Alagoas,275,0.31121,brazil_alagoas.png
+193,Uruguay,nan,337,0.19891,uruguay.png
+194,Denmark,nan,335,0.19945,denmark.png
+195,Colombia,Sucre,262,0.19990,colombia_sucre.png
+196,Mexico,Durango,284,0.20077,mexico_durango.png
+197,Ukraine,Kherson Oblast,239,0.20110,ukraine_kherson_oblast.png
+198,El Salvador,nan,267,0.20131,el_salvador.png
+199,India,Bihar,259,0.20143,india_bihar.png
+200,Japan,Osaka,260,0.20171,japan_osaka.png
+201,Kosovo,nan,246,0.20187,kosovo.png
+202,Croatia,nan,348,0.20234,croatia.png
+203,Sweden,Blekinge,150,0.20321,sweden_blekinge.png
+204,Spain,Madrid,211,0.20362,spain_madrid.png
+205,Congo Brazzaville,nan,82,0.20411,congo_brazzaville.png
+206,Mexico,Sonora,284,0.20436,mexico_sonora.png
+207,Kenya,nan,345,0.20437,kenya.png
+208,Brazil,nan,76,0.20483,brazil.png
+209,Oman,nan,287,0.20580,oman.png
+210,Eritrea,nan,108,0.20755,eritrea.png
+211,Gambia,nan,177,0.20786,gambia.png
+212,Netherlands,Sint Maarten,211,0.20885,netherlands_sint_maarten.png
+213,Pakistan,nan,94,0.20956,pakistan.png
+214,Romania,nan,362,0.20979,romania.png
+215,Brazil,Rondonia,274,0.20983,brazil_rondonia.png
+216,Peru,Tumbes,214,0.21013,peru_tumbes.png
+217,Chile,Aysen,222,0.21029,chile_aysen.png
+218,Germany,Mecklenburg Vorpommern,242,0.21104,germany_mecklenburg_vorpommern.png
+219,Italy,Basilicata,216,0.21254,italy_basilicata.png
+220,Pakistan,Islamabad,252,0.21280,pakistan_islamabad.png
+221,Mexico,Colima,283,0.21300,mexico_colima.png
+222,Italy,Molise,223,0.21349,italy_molise.png
+223,Canada,Ontario,358,0.21506,canada_ontario.png
+224,Lebanon,nan,359,0.21567,lebanon.png
+225,Japan,Wakayama,181,0.21573,japan_wakayama.png
+226,Canada,Manitoba,290,0.21585,canada_manitoba.png
+227,Bulgaria,nan,352,0.21633,bulgaria.png
+228,Chile,OHiggins,282,0.21665,chile_ohiggins.png
+229,Colombia,Boyaca,262,0.21729,colombia_boyaca.png
+230,Mexico,Veracruz,284,0.21844,mexico_veracruz.png
+231,Japan,Miyazaki,152,0.21912,japan_miyazaki.png
+232,Japan,Gunma,226,0.21979,japan_gunma.png
+233,France,Guadeloupe,79,0.21987,france_guadeloupe.png
+234,Slovenia,nan,342,0.22029,slovenia.png
+235,Chile,Los Rios,283,0.22043,chile_los_rios.png
+236,Brazil,Ceara,269,0.22047,brazil_ceara.png
+237,China,Guangdong,299,0.22068,china_guangdong.png
+238,Seychelles,nan,96,0.22144,seychelles.png
+239,China,Liaoning,115,0.22312,china_liaoning.png
+240,Sweden,Vasternorrland,157,0.22324,sweden_vasternorrland.png
+241,Mexico,Aguascalientes,279,0.22398,mexico_aguascalientes.png
+242,Japan,Kyoto,254,0.22414,japan_kyoto.png
+243,France,nan,345,0.22440,france.png
+244,Mexico,Puebla,284,0.22545,mexico_puebla.png
+245,Sweden,Kalmar,161,0.22588,sweden_kalmar.png
+246,Spain,Pais Vasco,209,0.22589,spain_pais_vasco.png
+247,Russia,Chukotka Autonomous Okrug,178,0.22647,russia_chukotka_autonomous_okrug.png
+248,Estonia,nan,343,0.22677,estonia.png
+249,India,Maharashtra,257,0.22715,india_maharashtra.png
+250,Ukraine,Volyn Oblast,273,0.22747,ukraine_volyn_oblast.png
+251,Germany,Niedersachsen,290,0.22824,germany_niedersachsen.png
+252,Chile,Atacama,281,0.22826,chile_atacama.png
+253,India,Goa,256,0.22830,india_goa.png
+254,South Korea,nan,392,0.22865,south_korea.png
+255,Russia,Pskov Oblast,273,0.22870,russia_pskov_oblast.png
+256,Sweden,Kronoberg,157,0.22913,sweden_kronoberg.png
+257,Japan,Ehime,120,0.22989,japan_ehime.png
+258,India,Dadra and Nagar Haveli and Daman and Diu,199,0.23020,india_dadra_and_nagar_haveli_and_daman_and_diu.png
+259,Colombia,Caldas,257,0.23050,colombia_caldas.png
+260,Italy,Lombardia,291,0.23062,italy_lombardia.png
+261,Colombia,La Guajira,261,0.23093,colombia_la_guajira.png
+262,Ukraine,Khmelnytskyi Oblast,264,0.23157,ukraine_khmelnytskyi_oblast.png
+263,Ukraine,Vinnytsia Oblast,273,0.23177,ukraine_vinnytsia_oblast.png
+264,India,Delhi,259,0.23217,india_delhi.png
+265,Mexico,Tamaulipas,284,0.23219,mexico_tamaulipas.png
+266,France,French Polynesia,138,0.23229,france_french_polynesia.png
+267,Serbia,nan,343,0.23239,serbia.png
+268,India,Chandigarh,258,0.23512,india_chandigarh.png
+269,Canada,Nova Scotia,207,0.23549,canada_nova_scotia.png
+270,Japan,Yamanashi,170,0.23659,japan_yamanashi.png
+271,Thailand,nan,345,0.23807,thailand.png
+272,Japan,Niigata,161,0.23830,japan_niigata.png
+273,Spain,Castilla y Leon,211,0.23887,spain_castilla_y_leon.png
+274,Russia,Kostroma Oblast,273,0.23910,russia_kostroma_oblast.png
+275,Mexico,Campeche,284,0.23926,mexico_campeche.png
+276,Indonesia,nan,359,0.23932,indonesia.png
+277,Italy,Liguria,290,0.23986,italy_liguria.png
+278,Guyana,nan,286,0.24198,guyana.png
+279,Japan,Hokkaido,275,0.24200,japan_hokkaido.png
+280,Mexico,Nayarit,283,0.24337,mexico_nayarit.png
+281,Chile,Antofagasta,283,0.24346,chile_antofagasta.png
+282,Japan,Aomori,120,0.24375,japan_aomori.png
+283,Peru,Lima,216,0.24471,peru_lima.png
+284,Canada,Saskatchewan,324,0.24541,canada_saskatchewan.png
+285,Colombia,Vichada,136,0.24559,colombia_vichada.png
+286,Lesotho,nan,131,0.24571,lesotho.png
+287,Luxembourg,nan,300,0.24575,luxembourg.png
+288,Benin,nan,107,0.24585,benin.png
+289,Nigeria,nan,349,0.24608,nigeria.png
+290,United Kingdom,Cayman Islands,125,0.24616,united_kingdom_cayman_islands.png
+291,Mozambique,nan,317,0.24698,mozambique.png
+292,Japan,Iwate,115,0.24759,japan_iwate.png
+293,Germany,Nordrhein Westfalen,276,0.24865,germany_nordrhein_westfalen.png
+294,India,nan,101,0.24897,india.png
+295,Brazil,Tocantins,278,0.24965,brazil_tocantins.png
+296,Netherlands,Overijssel,219,0.25034,netherlands_overijssel.png
+297,Sweden,Varmland,159,0.25050,sweden_varmland.png
+298,Poland,nan,360,0.25143,poland.png
+299,Saint Vincent and the Grenadines,nan,92,0.25215,saint_vincent_and_the_grenadines.png
+300,Germany,Rheinland Pfalz,290,0.25239,germany_rheinland_pfalz.png
+301,Ukraine,Dnipropetrovsk Oblast,262,0.25300,ukraine_dnipropetrovsk_oblast.png
+302,Brazil,Minas Gerais,278,0.25396,brazil_minas_gerais.png
+303,Ukraine,Donetsk Oblast,265,0.25412,ukraine_donetsk_oblast.png
+304,Burkina Faso,nan,288,0.25417,burkina_faso.png
+305,Brazil,Bahia,278,0.25447,brazil_bahia.png
+306,Nicaragua,nan,57,0.25544,nicaragua.png
+307,Guinea,nan,275,0.25606,guinea.png
+308,Peru,Callao,217,0.25748,peru_callao.png
+309,Germany,Baden Wurttemberg,269,0.25809,germany_baden_wurttemberg.png
+310,Sweden,Ostergotland,164,0.25886,sweden_ostergotland.png
+311,Italy,Toscana,291,0.25897,italy_toscana.png
+312,Japan,Saitama,267,0.25924,japan_saitama.png
+313,India,Manipur,259,0.25926,india_manipur.png
+314,Sweden,Gotland,133,0.25955,sweden_gotland.png
+315,Sweden,Vasterbotten,145,0.26026,sweden_vasterbotten.png
+316,Italy,Friuli Venezia Giulia,270,0.26057,italy_friuli_venezia_giulia.png
+317,Japan,Kanagawa,271,0.26140,japan_kanagawa.png
+318,Russia,Kurgan Oblast,273,0.26162,russia_kurgan_oblast.png
+319,India,Andaman and Nicobar Islands,224,0.26178,india_andaman_and_nicobar_islands.png
+320,Spain,Aragon,208,0.26181,spain_aragon.png
+321,Algeria,nan,360,0.26304,algeria.png
+322,Senegal,nan,353,0.26361,senegal.png
+323,Mexico,Queretaro,283,0.26419,mexico_queretaro.png
+324,Japan,Kagoshima,204,0.26420,japan_kagoshima.png
+325,Colombia,Norte de Santander,255,0.26480,colombia_norte_de_santander.png
+326,Germany,Hessen,277,0.26484,germany_hessen.png
+327,Slovakia,nan,349,0.26638,slovakia.png
+328,Chile,Nuble,281,0.26727,chile_nuble.png
+329,South Sudan,nan,179,0.26770,south_sudan.png
+330,South Africa,nan,357,0.26930,south_africa.png
+331,Colombia,Guainia,133,0.27012,colombia_guainia.png
+332,Netherlands,Flevoland,219,0.27039,netherlands_flevoland.png
+333,Russia,Samara Oblast,273,0.27096,russia_samara_oblast.png
+334,Colombia,Narino,263,0.27207,colombia_narino.png
+335,United Kingdom,Turks and Caicos Islands,159,0.27332,united_kingdom_turks_and_caicos_islands.png
+336,Portugal,nan,359,0.27356,portugal.png
+337,India,Sikkim,236,0.27457,india_sikkim.png
+338,Japan,Nagasaki,153,0.27466,japan_nagasaki.png
+339,Brazil,Amazonas,276,0.27654,brazil_amazonas.png
+340,Peru,Loreto,214,0.27699,peru_loreto.png
+341,Colombia,Cauca,265,0.27723,colombia_cauca.png
+342,North Macedonia,nan,354,0.27756,north_macedonia.png
+343,Peru,Piura,216,0.27843,peru_piura.png
+344,Russia,Tyva Republic,273,0.27867,russia_tyva_republic.png
+345,Colombia,Quindio,249,0.27917,colombia_quindio.png
+346,Sweden,Sormland,151,0.27975,sweden_sormland.png
+347,Germany,Bremen,267,0.28008,germany_bremen.png
+348,Germany,Schleswig Holstein,260,0.28025,germany_schleswig_holstein.png
+349,Colombia,Huila,256,0.28025,colombia_huila.png
+350,France,Martinique,74,0.28036,france_martinique.png
+351,Cyprus,nan,330,0.28072,cyprus.png
+352,France,St Martin,56,0.28183,france_st_martin.png
+353,Burma,nan,285,0.28215,burma.png
+354,Japan,Aichi,248,0.28216,japan_aichi.png
+355,Brazil,Goias,274,0.28270,brazil_goias.png
+356,Japan,Okayama,191,0.28279,japan_okayama.png
+357,Brazil,Rio de Janeiro,275,0.28521,brazil_rio_de_janeiro.png
+358,Colombia,Capital District,266,0.28627,colombia_capital_district.png
+359,Spain,Melilla,149,0.28654,spain_melilla.png
+360,Peru,Ucayali,216,0.28662,peru_ucayali.png
+361,Japan,Toyama,151,0.28713,japan_toyama.png
+362,Azerbaijan,nan,354,0.28740,azerbaijan.png
+363,Russia,Arkhangelsk Oblast,273,0.28861,russia_arkhangelsk_oblast.png
+364,Congo Kinshasa,nan,324,0.28920,congo_kinshasa.png
+365,Germany,nan,84,0.28947,germany.png
+366,Brazil,Roraima,275,0.28950,brazil_roraima.png
+367,West Bank and Gaza,nan,315,0.29091,west_bank_and_gaza.png
+368,Ecuador,nan,338,0.29292,ecuador.png
+369,Italy,Abruzzo,271,0.29298,italy_abruzzo.png
+370,Liechtenstein,nan,188,0.29354,liechtenstein.png
+371,Kazakhstan,nan,337,0.29548,kazakhstan.png
+372,Mexico,Mexico,284,0.29557,mexico_mexico.png
+373,Mexico,Quintana Roo,282,0.29631,mexico_quintana_roo.png
+374,India,Andhra Pradesh,258,0.29716,india_andhra_pradesh.png
+375,Cabo Verde,nan,320,0.29786,cabo_verde.png
+376,Pakistan,Gilgit Baltistan,229,0.29806,pakistan_gilgit_baltistan.png
+377,Gabon,nan,172,0.29822,gabon.png
+378,Taiwan,nan,211,0.29874,taiwan.png
+379,Japan,Tokushima,116,0.30021,japan_tokushima.png
+380,Brazil,Rio Grande do Sul,274,0.30123,brazil_rio_grande_do_sul.png
+381,India,Assam,257,0.30129,india_assam.png
+382,Russia,Ryazan Oblast,273,0.30196,russia_ryazan_oblast.png
+383,Netherlands,Groningen,219,0.30274,netherlands_groningen.png
+384,Netherlands,Unknown,177,0.30342,netherlands_unknown.png
+385,Ukraine,Zakarpattia Oblast,273,0.30355,ukraine_zakarpattia_oblast.png
+386,United Kingdom,Northern Ireland,236,0.30411,united_kingdom_northern_ireland.png
+387,Mauritius,nan,100,0.30411,mauritius.png
+388,Ukraine,Crimea Republic,271,0.30452,ukraine_crimea_republic.png
+389,Ukraine,Kiev Oblast,273,0.30621,ukraine_kiev_oblast.png
+390,Mexico,Guanajuato,284,0.30629,mexico_guanajuato.png
+391,Brazil,Amapa,273,0.30636,brazil_amapa.png
+392,Ukraine,Chernivtsi Oblast,273,0.30901,ukraine_chernivtsi_oblast.png
+393,Tunisia,nan,310,0.31027,tunisia.png
+394,Sweden,Halland,162,0.31035,sweden_halland.png
+395,Madagascar,nan,204,0.31105,madagascar.png
+396,Mexico,Zacatecas,283,0.31113,mexico_zacatecas.png
 397,Denmark,Faroe Islands,136,0.31122,denmark_faroe_islands.png
-398,Ukraine,Lviv Oblast,271,0.31217,ukraine_lviv_oblast.png
-399,United Kingdom,Northern Ireland,234,0.31237,united_kingdom_northern_ireland.png
+398,Italy,Marche,273,0.31166,italy_marche.png
+399,Costa Rica,nan,314,0.31226,costa_rica.png
 400,Russia,Nenets Autonomous Okrug,205,0.31274,russia_nenets_autonomous_okrug.png
-401,Brazil,Mato Grosso do Sul,276,0.31281,brazil_mato_grosso_do_sul.png
-402,Mexico,Zacatecas,281,0.31367,mexico_zacatecas.png
-403,Yemen,nan,208,0.31511,yemen.png
-404,Costa Rica,nan,313,0.31623,costa_rica.png
-405,China,Jilin,74,0.31726,china_jilin.png
-406,Ukraine,Crimea Republic,269,0.31736,ukraine_crimea_republic.png
-407,Tunisia,nan,308,0.31848,tunisia.png
-408,China,Xinjiang,61,0.32050,china_xinjiang.png
-409,Japan,Nagano,185,0.32143,japan_nagano.png
-410,Russia,Sakha Yakutiya Republic,271,0.32146,russia_sakha_yakutiya_republic.png
-411,Russia,Vladimir Oblast,271,0.32251,russia_vladimir_oblast.png
-412,Japan,Chiba,263,0.32436,japan_chiba.png
-413,Colombia,Magdalena,264,0.32465,colombia_magdalena.png
-414,India,Haryana,257,0.32662,india_haryana.png
-415,Netherlands,Gelderland,220,0.32696,netherlands_gelderland.png
-416,Japan,Nara,226,0.32807,japan_nara.png
-417,China,Gansu,51,0.32921,china_gansu.png
-418,Russia,Novgorod Oblast,271,0.32989,russia_novgorod_oblast.png
-419,Brazil,Para,276,0.33015,brazil_para.png
-420,Japan,Yamagata,90,0.33071,japan_yamagata.png
-421,Germany,Hamburg,280,0.33147,germany_hamburg.png
-422,Japan,Kagawa,137,0.33213,japan_kagawa.png
-423,Sweden,Skane,164,0.33247,sweden_skane.png
-424,Russia,Buryatia Republic,271,0.33327,russia_buryatia_republic.png
-425,Mexico,Oaxaca,281,0.33579,mexico_oaxaca.png
-426,China,Heilongjiang,104,0.33633,china_heilongjiang.png
-427,Italy,Valle dAosta,204,0.33659,italy_valle_daosta.png
-428,Mongolia,nan,193,0.33685,mongolia.png
-429,Panama,nan,350,0.33709,panama.png
-430,Canada,New Brunswick,205,0.33734,canada_new_brunswick.png
-431,Germany,Saarland,253,0.33738,germany_saarland.png
-432,Japan,Mie,212,0.33821,japan_mie.png
-433,Australia,Western Australia,188,0.33843,australia_western_australia.png
-434,Italy,Campania,279,0.33868,italy_campania.png
-435,Barbados,nan,190,0.33890,barbados.png
-436,Italy,Umbria,238,0.33911,italy_umbria.png
-437,Cuba,nan,348,0.34034,cuba.png
-438,Bangladesh,nan,347,0.34054,bangladesh.png
-439,Japan,Okinawa,225,0.34146,japan_okinawa.png
-440,Russia,Jewish Autonomous Okrug,269,0.34166,russia_jewish_autonomous_okrug.png
-441,Japan,Ishikawa,193,0.34176,japan_ishikawa.png
+401,Brazil,Parana,274,0.31412,brazil_parana.png
+402,Japan,Port Quarantine,266,0.31467,japan_port_quarantine.png
+403,Brazil,Alagoas,277,0.31651,brazil_alagoas.png
+404,Colombia,Magdalena,266,0.31667,colombia_magdalena.png
+405,Ukraine,Lviv Oblast,273,0.31687,ukraine_lviv_oblast.png
+406,China,Jilin,74,0.31726,china_jilin.png
+407,Japan,Chiba,265,0.31856,japan_chiba.png
+408,Brazil,Mato Grosso do Sul,278,0.31922,brazil_mato_grosso_do_sul.png
+409,Yemen,nan,210,0.31968,yemen.png
+410,Russia,Novgorod Oblast,273,0.32048,russia_novgorod_oblast.png
+411,China,Xinjiang,61,0.32050,china_xinjiang.png
+412,Japan,Nagano,185,0.32143,japan_nagano.png
+413,Mongolia,nan,195,0.32303,mongolia.png
+414,Italy,Valle dAosta,206,0.32317,italy_valle_daosta.png
+415,Russia,Buryatia Republic,273,0.32499,russia_buryatia_republic.png
+416,Japan,Mie,214,0.32613,japan_mie.png
+417,Japan,Nara,228,0.32729,japan_nara.png
+418,Mexico,Oaxaca,283,0.32779,mexico_oaxaca.png
+419,Russia,Vladimir Oblast,273,0.32780,russia_vladimir_oblast.png
+420,Russia,Sakha Yakutiya Republic,273,0.32860,russia_sakha_yakutiya_republic.png
+421,China,Gansu,51,0.32921,china_gansu.png
+422,Panama,nan,352,0.32924,panama.png
+423,Germany,Hamburg,282,0.32944,germany_hamburg.png
+424,Japan,Yamagata,90,0.33071,japan_yamagata.png
+425,Sweden,Skane,164,0.33247,sweden_skane.png
+426,Netherlands,Gelderland,222,0.33262,netherlands_gelderland.png
+427,Brazil,Para,278,0.33307,brazil_para.png
+428,India,Haryana,259,0.33329,india_haryana.png
+429,China,Heilongjiang,104,0.33633,china_heilongjiang.png
+430,Bangladesh,nan,349,0.33742,bangladesh.png
+431,Sao Tome and Principe,nan,175,0.33765,sao_tome_and_principe.png
+432,Australia,Western Australia,188,0.33843,australia_western_australia.png
+433,Italy,Campania,281,0.33845,italy_campania.png
+434,Japan,Kagawa,138,0.33911,japan_kagawa.png
+435,Japan,Okinawa,227,0.33923,japan_okinawa.png
+436,Canada,New Brunswick,206,0.33956,canada_new_brunswick.png
+437,Italy,Umbria,240,0.33960,italy_umbria.png
+438,Germany,Saarland,255,0.34097,germany_saarland.png
+439,Barbados,nan,192,0.34164,barbados.png
+440,Italy,Sicilia,276,0.34175,italy_sicilia.png
+441,Uzbekistan,nan,340,0.34218,uzbekistan.png
 442,Bhutan,nan,168,0.34349,bhutan.png
-443,Russia,Kaluga Oblast,271,0.34360,russia_kaluga_oblast.png
+443,Brazil,Sao Paulo,271,0.34359,brazil_sao_paulo.png
 444,Mexico,nan,74,0.34388,mexico.png
-445,Sao Tome and Principe,nan,174,0.34460,sao_tome_and_principe.png
-446,Russia,Tula Oblast,271,0.34569,russia_tula_oblast.png
-447,Uzbekistan,nan,339,0.34570,uzbekistan.png
-448,Mexico,Ciudad de Mexico,282,0.34674,mexico_ciudad_de_mexico.png
-449,Mexico,Coahuila,281,0.34748,mexico_coahuila.png
-450,Russia,Bryansk Oblast,271,0.34806,russia_bryansk_oblast.png
-451,Canada,Nunavut,59,0.34879,canada_nunavut.png
-452,India,Karnataka,257,0.34968,india_karnataka.png
-453,Peru,nan,79,0.35086,peru.png
-454,Italy,Sicilia,274,0.35090,italy_sicilia.png
-455,Russia,Chelyabinsk Oblast,271,0.35307,russia_chelyabinsk_oblast.png
-456,Sweden,Jonkoping,162,0.35356,sweden_jonkoping.png
-457,Brazil,Sao Paulo,269,0.35424,brazil_sao_paulo.png
-458,India,Ladakh,245,0.35514,india_ladakh.png
-459,Colombia,Meta,261,0.35610,colombia_meta.png
-460,Mexico,Baja California Sur,282,0.35616,mexico_baja_california_sur.png
-461,Russia,Adygea Republic,271,0.35649,russia_adygea_republic.png
-462,Malta,nan,323,0.35769,malta.png
-463,Russia,Chuvashia Republic,271,0.35839,russia_chuvashia_republic.png
-464,Chile,Coquimbo,281,0.35903,chile_coquimbo.png
-465,Chile,Araucania,280,0.35920,chile_araucania.png
-466,Ukraine,Ivano Frankivsk Oblast,271,0.35941,ukraine_ivano_frankivsk_oblast.png
-467,Bahrain,nan,363,0.36061,bahrain.png
-468,Chile,Maule,281,0.36215,chile_maule.png
-469,Chile,Arica y Parinacota,281,0.36426,chile_arica_y_parinacota.png
-470,Brazil,Mato Grosso,274,0.36550,brazil_mato_grosso.png
-471,Mexico,Morelos,277,0.36705,mexico_morelos.png
-472,Guatemala,nan,342,0.36916,guatemala.png
-473,Russia,Penza Oblast,271,0.37125,russia_penza_oblast.png
-474,Japan,Kochi,115,0.37185,japan_kochi.png
-475,Russia,Khakassia Republic,271,0.37315,russia_khakassia_republic.png
+445,Cuba,nan,350,0.34459,cuba.png
+446,Mexico,Coahuila,283,0.34493,mexico_coahuila.png
+447,Russia,Jewish Autonomous Okrug,271,0.34803,russia_jewish_autonomous_okrug.png
+448,Mexico,Ciudad de Mexico,284,0.34853,mexico_ciudad_de_mexico.png
+449,Russia,Tula Oblast,273,0.34899,russia_tula_oblast.png
+450,India,Ladakh,246,0.35046,india_ladakh.png
+451,Russia,Kaluga Oblast,273,0.35058,russia_kaluga_oblast.png
+452,Peru,nan,79,0.35086,peru.png
+453,Japan,Ishikawa,195,0.35122,japan_ishikawa.png
+454,Mexico,Baja California Sur,284,0.35221,mexico_baja_california_sur.png
+455,Chile,Maule,283,0.35315,chile_maule.png
+456,Russia,Bryansk Oblast,273,0.35325,russia_bryansk_oblast.png
+457,Sweden,Jonkoping,162,0.35356,sweden_jonkoping.png
+458,Colombia,Meta,263,0.35374,colombia_meta.png
+459,India,Karnataka,259,0.35454,india_karnataka.png
+460,Russia,Adygea Republic,273,0.35527,russia_adygea_republic.png
+461,Russia,Chelyabinsk Oblast,273,0.35631,russia_chelyabinsk_oblast.png
+462,Ukraine,Ivano Frankivsk Oblast,273,0.35711,ukraine_ivano_frankivsk_oblast.png
+463,Malta,nan,325,0.35794,malta.png
+464,Chile,Araucania,282,0.36092,chile_araucania.png
+465,Bahrain,nan,365,0.36300,bahrain.png
+466,Brazil,Mato Grosso,276,0.36349,brazil_mato_grosso.png
+467,Chile,Coquimbo,283,0.36396,chile_coquimbo.png
+468,Russia,Chuvashia Republic,273,0.36417,russia_chuvashia_republic.png
+469,Guatemala,nan,344,0.36444,guatemala.png
+470,Mexico,Morelos,279,0.36475,mexico_morelos.png
+471,Mexico,Baja California,282,0.36724,mexico_baja_california.png
+472,Brazil,Piaui,278,0.36916,brazil_piaui.png
+473,Chile,Arica y Parinacota,283,0.37019,chile_arica_y_parinacota.png
+474,Russia,Khakassia Republic,273,0.37150,russia_khakassia_republic.png
+475,Japan,Kochi,115,0.37185,japan_kochi.png
 476,Peru,La Libertad,217,0.37359,peru_la_libertad.png
-477,Brazil,Piaui,276,0.37436,brazil_piaui.png
+477,Belgium,Namur,108,0.37421,belgium_namur.png
 478,Japan,Fukui,109,0.37487,japan_fukui.png
-479,Colombia,Cundinamarca,263,0.37496,colombia_cundinamarca.png
-480,Ukraine,Ternopil Oblast,271,0.37521,ukraine_ternopil_oblast.png
-481,Mexico,Baja California,280,0.37554,mexico_baja_california.png
-482,Ethiopia,nan,331,0.37632,ethiopia.png
-483,Albania,nan,354,0.37780,albania.png
-484,Colombia,Vaupes,102,0.37909,colombia_vaupes.png
-485,Netherlands,nan,129,0.38059,netherlands.png
-486,Peru,Lambayeque,215,0.38113,peru_lambayeque.png
-487,Mexico,Tabasco,282,0.38151,mexico_tabasco.png
-488,Pakistan,Khyber Pakhtunkhwa,250,0.38222,pakistan_khyber_pakhtunkhwa.png
-489,Belgium,Namur,106,0.38260,belgium_namur.png
-490,Russia,Kursk Oblast,271,0.38263,russia_kursk_oblast.png
-491,Brazil,Acre,276,0.38283,brazil_acre.png
-492,Colombia,nan,78,0.38334,colombia.png
-493,China,Hebei,97,0.38350,china_hebei.png
+479,Ethiopia,nan,333,0.37529,ethiopia.png
+480,Russia,Penza Oblast,273,0.37725,russia_penza_oblast.png
+481,Ukraine,Ternopil Oblast,273,0.37829,ukraine_ternopil_oblast.png
+482,Pakistan,Khyber Pakhtunkhwa,252,0.37975,pakistan_khyber_pakhtunkhwa.png
+483,Papua New Guinea,nan,103,0.37999,papua_new_guinea.png
+484,Albania,nan,356,0.38014,albania.png
+485,Colombia,Cundinamarca,265,0.38052,colombia_cundinamarca.png
+486,Japan,Oita,142,0.38054,japan_oita.png
+487,Bolivia,nan,348,0.38057,bolivia.png
+488,Netherlands,nan,129,0.38059,netherlands.png
+489,Peru,Lambayeque,215,0.38113,peru_lambayeque.png
+490,Canada,Nunavut,61,0.38154,canada_nunavut.png
+491,Colombia,nan,78,0.38334,colombia.png
+492,China,Hebei,97,0.38350,china_hebei.png
+493,Mexico,Tabasco,284,0.38371,mexico_tabasco.png
 494,Chile,nan,71,0.38385,chile.png
-495,Japan,Hyogo,245,0.38453,japan_hyogo.png
-496,Honduras,nan,327,0.38454,honduras.png
-497,Iraq,nan,363,0.38556,iraq.png
-498,United Kingdom,Isle of Man,100,0.38575,united_kingdom_isle_of_man.png
-499,Italy,nan,83,0.38589,italy.png
-500,Chile,Magallanes,277,0.38710,chile_magallanes.png
-501,Bolivia,nan,346,0.38814,bolivia.png
-502,Japan,Oita,141,0.38833,japan_oita.png
-503,Brazil,Paraiba,275,0.38860,brazil_paraiba.png
-504,Brazil,Distrito Federal,276,0.39008,brazil_distrito_federal.png
-505,China,Inner Mongolia,114,0.39153,china_inner_mongolia.png
-506,Papua New Guinea,nan,102,0.39217,papua_new_guinea.png
-507,Russia,Komi Republic,271,0.39293,russia_komi_republic.png
-508,China,Hunan,50,0.39371,china_hunan.png
-509,Argentina,nan,351,0.39701,argentina.png
-510,Mexico,San Luis Potosi,281,0.39730,mexico_san_luis_potosi.png
-511,Ukraine,Kharkiv Oblast,271,0.39735,ukraine_kharkiv_oblast.png
-512,Italy,PA Trento,266,0.39738,italy_pa_trento.png
-513,India,Puducherry,247,0.39798,india_puducherry.png
-514,Egypt,nan,359,0.39815,egypt.png
-515,Mexico,Hidalgo,282,0.39871,mexico_hidalgo.png
-516,United Kingdom,Bermuda,131,0.39884,united_kingdom_bermuda.png
-517,Italy,Calabria,247,0.39911,italy_calabria.png
-518,Antigua and Barbuda,nan,91,0.40027,antigua_and_barbuda.png
-519,Netherlands,Utrecht,220,0.40030,netherlands_utrecht.png
-520,Guinea Bissau,nan,102,0.40205,guinea_bissau.png
-521,Russia,Chechen Republic,271,0.40279,russia_chechen_republic.png
-522,Saudi Arabia,nan,356,0.40368,saudi_arabia.png
-523,Netherlands,Drenthe,211,0.40420,netherlands_drenthe.png
-524,Italy,Puglia,262,0.40462,italy_puglia.png
-525,Mexico,Guerrero,281,0.41230,mexico_guerrero.png
+495,Colombia,Vaupes,103,0.38556,colombia_vaupes.png
+496,Brazil,Acre,278,0.38580,brazil_acre.png
+497,Brazil,Distrito Federal,278,0.38580,brazil_distrito_federal.png
+498,Italy,nan,83,0.38589,italy.png
+499,India,Puducherry,249,0.38712,india_puducherry.png
+500,Chile,Magallanes,279,0.38718,chile_magallanes.png
+501,Antigua and Barbuda,nan,93,0.38727,antigua_and_barbuda.png
+502,Russia,Kursk Oblast,273,0.38738,russia_kursk_oblast.png
+503,Mexico,Hidalgo,284,0.38742,mexico_hidalgo.png
+504,Guinea Bissau,nan,103,0.38759,guinea_bissau.png
+505,Argentina,nan,353,0.38794,argentina.png
+506,Iraq,nan,365,0.38948,iraq.png
+507,Honduras,nan,329,0.38953,honduras.png
+508,Japan,Hyogo,247,0.38988,japan_hyogo.png
+509,Egypt,nan,361,0.39136,egypt.png
+510,China,Inner Mongolia,114,0.39153,china_inner_mongolia.png
+511,Brazil,Paraiba,277,0.39154,brazil_paraiba.png
+512,United Kingdom,Isle of Man,101,0.39229,united_kingdom_isle_of_man.png
+513,Italy,PA Trento,268,0.39289,italy_pa_trento.png
+514,Mexico,San Luis Potosi,283,0.39305,mexico_san_luis_potosi.png
+515,China,Hunan,50,0.39371,china_hunan.png
+516,Russia,Komi Republic,273,0.39937,russia_komi_republic.png
+517,Ukraine,Kharkiv Oblast,273,0.40027,ukraine_kharkiv_oblast.png
+518,Italy,Calabria,249,0.40230,italy_calabria.png
+519,United Kingdom,Bermuda,132,0.40254,united_kingdom_bermuda.png
+520,Mexico,Guerrero,283,0.40264,mexico_guerrero.png
+521,Russia,Chechen Republic,273,0.40425,russia_chechen_republic.png
+522,Netherlands,Utrecht,222,0.40611,netherlands_utrecht.png
+523,Saudi Arabia,nan,358,0.40675,saudi_arabia.png
+524,Netherlands,Drenthe,213,0.40731,netherlands_drenthe.png
+525,Italy,Puglia,264,0.40878,italy_puglia.png
 526,Japan,Akita,83,0.41333,japan_akita.png
-527,Peru,San Martin,217,0.41532,peru_san_martin.png
-528,Russia,Amur Oblast,271,0.41549,russia_amur_oblast.png
-529,Sri Lanka,nan,339,0.41657,sri_lanka.png
-530,Iran,nan,374,0.41862,iran.png
-531,India,Chhattisgarh,256,0.42075,india_chhattisgarh.png
-532,Russia,Tambov Oblast,271,0.42077,russia_tambov_oblast.png
-533,Russia,nan,86,0.42090,russia.png
-534,Spain,nan,77,0.42238,spain.png
-535,Libya,nan,284,0.42242,libya.png
-536,Italy,Emilia Romagna,289,0.42292,italy_emilia_romagna.png
-537,India,Madhya Pradesh,257,0.42478,india_madhya_pradesh.png
-538,Chile,Biobio,281,0.42489,chile_biobio.png
-539,Colombia,Valle del Cauca,262,0.42549,colombia_valle_del_cauca.png
-540,Mexico,Jalisco,282,0.42630,mexico_jalisco.png
+527,Chile,Biobio,283,0.41377,chile_biobio.png
+528,India,Madhya Pradesh,259,0.41517,india_madhya_pradesh.png
+529,Peru,San Martin,217,0.41532,peru_san_martin.png
+530,Sri Lanka,nan,341,0.41586,sri_lanka.png
+531,Colombia,Valle del Cauca,264,0.41624,colombia_valle_del_cauca.png
+532,United Kingdom,Scotland,256,0.41626,united_kingdom_scotland.png
+533,Mexico,Jalisco,284,0.41906,mexico_jalisco.png
+534,Russia,Amur Oblast,273,0.41944,russia_amur_oblast.png
+535,Russia,nan,86,0.42090,russia.png
+536,Spain,nan,77,0.42238,spain.png
+537,Iran,nan,376,0.42329,iran.png
+538,Russia,Tambov Oblast,273,0.42553,russia_tambov_oblast.png
+539,India,Chhattisgarh,258,0.42560,india_chhattisgarh.png
+540,Mexico,Nuevo Leon,284,0.42601,mexico_nuevo_leon.png
 541,Peru,Ancash,216,0.42646,peru_ancash.png
-542,United Kingdom,Scotland,254,0.42671,united_kingdom_scotland.png
-543,Mexico,Nuevo Leon,282,0.42716,mexico_nuevo_leon.png
-544,Russia,Ivanovo Oblast,271,0.43009,russia_ivanovo_oblast.png
-545,Philippines,nan,362,0.43249,philippines.png
-546,China,Hubei,67,0.43402,china_hubei.png
-547,Mexico,Sinaloa,282,0.43651,mexico_sinaloa.png
-548,Paraguay,nan,344,0.43863,paraguay.png
-549,Canada,Newfoundland and Labrador,136,0.44017,canada_newfoundland_and_labrador.png
-550,India,Rajasthan,257,0.44062,india_rajasthan.png
-551,India,Telangana,254,0.44243,india_telangana.png
-552,Colombia,Antioquia,263,0.44473,colombia_antioquia.png
-553,Netherlands,Zuid Holland,220,0.44504,netherlands_zuid_holland.png
-554,Netherlands,Zeeland,217,0.44733,netherlands_zeeland.png
-555,India,Jammu and Kashmir,257,0.44852,india_jammu_and_kashmir.png
-556,Montenegro,nan,292,0.44897,montenegro.png
-557,India,Uttarakhand,247,0.44919,india_uttarakhand.png
-558,Australia,Queensland,208,0.44972,australia_queensland.png
-559,Cambodia,nan,138,0.45155,cambodia.png
-560,Russia,Sakhalin Oblast,270,0.45383,russia_sakhalin_oblast.png
-561,Russia,Tomsk Oblast,271,0.45623,russia_tomsk_oblast.png
-562,Turkey,nan,351,0.45742,turkey.png
-563,Venezuela,nan,336,0.46007,venezuela.png
-564,Russia,Kirov Oblast,271,0.46257,russia_kirov_oblast.png
-565,Japan,Shimane,72,0.46317,japan_shimane.png
-566,Brazil,Pernambuco,275,0.46696,brazil_pernambuco.png
-567,China,Henan,59,0.46839,china_henan.png
-568,Chile,Valparaiso,280,0.46852,chile_valparaiso.png
-569,Qatar,nan,358,0.47033,qatar.png
-570,Russia,Ingushetia Republic,271,0.47217,russia_ingushetia_republic.png
-571,Netherlands,Limburg,219,0.47661,netherlands_limburg.png
-572,China,Beijing,155,0.47801,china_beijing.png
-573,Australia,South Australia,120,0.47921,australia_south_australia.png
-574,Russia,Khabarovsk Krai,271,0.47985,russia_khabarovsk_krai.png
-575,Belgium,Walloon Brabant,106,0.48083,belgium_walloon_brabant.png
-576,Belgium,Unknown,105,0.48139,belgium_unknown.png
-577,Pakistan,Punjab,250,0.48594,pakistan_punjab.png
-578,Belgium,Luxembourg,106,0.48713,belgium_luxembourg.png
-579,India,Kerala,255,0.48813,india_kerala.png
-580,Russia,Omsk Oblast,271,0.49031,russia_omsk_oblast.png
-581,Canada,Quebec,345,0.49047,canada_quebec.png
-582,Belgium,Hainaut,106,0.49227,belgium_hainaut.png
-583,Russia,Kaliningrad Oblast,271,0.49963,russia_kaliningrad_oblast.png
-584,Brazil,Espirito Santo,274,0.50168,brazil_espirito_santo.png
-585,China,Sichuan,198,0.50295,china_sichuan.png
-586,Syria,nan,280,0.50411,syria.png
-587,Mexico,Michoacan,277,0.51097,mexico_michoacan.png
-588,Russia,Zabaykalsky Krai,271,0.51128,russia_zabaykalsky_krai.png
-589,Russia,Moscow Oblast,271,0.51442,russia_moscow_oblast.png
-590,China,Tianjin,147,0.51514,china_tianjin.png
-591,Belgium,Liege,106,0.51745,belgium_liege.png
-592,Russia,Karelia Republic,271,0.51777,russia_karelia_republic.png
-593,Netherlands,Friesland,212,0.52028,netherlands_friesland.png
-594,Russia,Kamchatka Krai,271,0.52177,russia_kamchatka_krai.png
-595,Russia,Saint Petersburg,271,0.52281,russia_saint_petersburg.png
-596,Canada,Prince Edward Island,55,0.52375,canada_prince_edward_island.png
-597,Colombia,Santander,261,0.52468,colombia_santander.png
-598,Russia,North Ossetia Alania Republic,271,0.52814,russia_north_ossetia_alania_republic.png
-599,Belgium,Brussels,106,0.53172,belgium_brussels.png
-600,Russia,Leningrad Oblast,271,0.53742,russia_leningrad_oblast.png
-601,Mexico,Yucatan,282,0.54203,mexico_yucatan.png
-602,Russia,Bashkortostan Republic,271,0.54833,russia_bashkortostan_republic.png
-603,Japan,Tottori,77,0.55065,japan_tottori.png
-604,China,Shandong,96,0.56659,china_shandong.png
-605,China,Yunnan,67,0.56814,china_yunnan.png
-606,Russia,Tver Oblast,271,0.57032,russia_tver_oblast.png
-607,Chile,Metropolitana,281,0.57099,chile_metropolitana.png
-608,Ukraine,Sevastopol,259,0.57168,ukraine_sevastopol.png
-609,Netherlands,Noord Brabant,220,0.57242,netherlands_noord_brabant.png
-610,United Kingdom,nan,97,0.57319,united_kingdom.png
-611,Russia,Udmurt Republic,271,0.57785,russia_udmurt_republic.png
-612,Russia,Murmansk Oblast,271,0.58185,russia_murmansk_oblast.png
-613,India,Gujarat,257,0.58268,india_gujarat.png
-614,Russia,Lipetsk Oblast,271,0.58422,russia_lipetsk_oblast.png
-615,China,Fujian,165,0.58515,china_fujian.png
-616,Russia,Altai Krai,271,0.58729,russia_altai_krai.png
-617,Russia,Orel Oblast,271,0.58819,russia_orel_oblast.png
-618,Sweden,nan,99,0.58985,sweden.png
-619,Russia,Perm Krai,271,0.59117,russia_perm_krai.png
-620,Russia,Astrakhan Oblast,271,0.59661,russia_astrakhan_oblast.png
-621,Russia,Tyumen Oblast,271,0.59767,russia_tyumen_oblast.png
-622,Russia,Nizhny Novgorod Oblast,271,0.59790,russia_nizhny_novgorod_oblast.png
-623,Kuwait,nan,362,0.60191,kuwait.png
-624,China,Shaanxi,157,0.61263,china_shaanxi.png
-625,China,Zhejiang,97,0.61276,china_zhejiang.png
-626,Italy,Lazio,289,0.61514,italy_lazio.png
-627,Russia,Yamalo Nenets Autonomous Okrug,271,0.61564,russia_yamalo_nenets_autonomous_okrug.png
-628,Russia,Tatarstan Republic,271,0.61577,russia_tatarstan_republic.png
-629,Belgium,Antwerp,106,0.61921,belgium_antwerp.png
-630,Netherlands,Noord Holland,220,0.62449,netherlands_noord_holland.png
-631,India,West Bengal,256,0.65575,india_west_bengal.png
-632,Russia,Belgorod Oblast,271,0.66346,russia_belgorod_oblast.png
-633,Russia,Magadan Oblast,271,0.66537,russia_magadan_oblast.png
-634,China,Jiangsu,78,0.66767,china_jiangsu.png
-635,Belgium,Flemish Brabant,106,0.66839,belgium_flemish_brabant.png
-636,Belarus,nan,340,0.67470,belarus.png
-637,Belgium,Limburg,106,0.67930,belgium_limburg.png
-638,Belgium,West Flanders,106,0.68095,belgium_west_flanders.png
-639,Russia,Yaroslavl Oblast,271,0.68855,russia_yaroslavl_oblast.png
-640,Russia,Smolensk Oblast,271,0.68945,russia_smolensk_oblast.png
-641,India,Tamil Nadu,257,0.69061,india_tamil_nadu.png
-642,Belgium,East Flanders,106,0.69468,belgium_east_flanders.png
-643,Russia,Sverdlovsk Oblast,271,0.69683,russia_sverdlovsk_oblast.png
+542,Italy,Emilia Romagna,291,0.42720,italy_emilia_romagna.png
+543,Libya,nan,286,0.42789,libya.png
+544,Russia,Ivanovo Oblast,273,0.43011,russia_ivanovo_oblast.png
+545,Canada,Newfoundland and Labrador,138,0.43164,canada_newfoundland_and_labrador.png
+546,Mexico,Sinaloa,284,0.43311,mexico_sinaloa.png
+547,Colombia,Antioquia,265,0.43348,colombia_antioquia.png
+548,China,Hubei,67,0.43402,china_hubei.png
+549,Philippines,nan,364,0.43586,philippines.png
+550,Australia,Queensland,210,0.44349,australia_queensland.png
+551,Russia,Sakhalin Oblast,272,0.44391,russia_sakhalin_oblast.png
+552,Paraguay,nan,346,0.44418,paraguay.png
+553,India,Rajasthan,259,0.44458,india_rajasthan.png
+554,India,Telangana,256,0.44643,india_telangana.png
+555,Netherlands,Zuid Holland,222,0.44766,netherlands_zuid_holland.png
+556,India,Uttarakhand,247,0.44919,india_uttarakhand.png
+557,Netherlands,Zeeland,219,0.45195,netherlands_zeeland.png
+558,Russia,Kirov Oblast,273,0.45446,russia_kirov_oblast.png
+559,Montenegro,nan,294,0.45452,montenegro.png
+560,India,Jammu and Kashmir,259,0.45585,india_jammu_and_kashmir.png
+561,Turkey,nan,353,0.45656,turkey.png
+562,Russia,Tomsk Oblast,273,0.45765,russia_tomsk_oblast.png
+563,Chile,Valparaiso,282,0.45778,chile_valparaiso.png
+564,Cambodia,nan,140,0.46004,cambodia.png
+565,Qatar,nan,360,0.46242,qatar.png
+566,Japan,Shimane,72,0.46317,japan_shimane.png
+567,Belgium,Luxembourg,108,0.46337,belgium_luxembourg.png
+568,Venezuela,nan,338,0.46447,venezuela.png
+569,Russia,Ingushetia Republic,273,0.46646,russia_ingushetia_republic.png
+570,Brazil,Pernambuco,277,0.47048,brazil_pernambuco.png
+571,India,Kerala,257,0.47965,india_kerala.png
+572,China,Beijing,156,0.48165,china_beijing.png
+573,China,Henan,60,0.48195,china_henan.png
+574,Netherlands,Limburg,221,0.48199,netherlands_limburg.png
+575,Belgium,Walloon Brabant,108,0.48222,belgium_walloon_brabant.png
+576,Australia,South Australia,122,0.48440,australia_south_australia.png
+577,China,Sichuan,200,0.48588,china_sichuan.png
+578,Russia,Khabarovsk Krai,273,0.48591,russia_khabarovsk_krai.png
+579,Belgium,Hainaut,108,0.49053,belgium_hainaut.png
+580,Russia,Omsk Oblast,273,0.49296,russia_omsk_oblast.png
+581,Canada,Quebec,347,0.49314,canada_quebec.png
+582,Pakistan,Punjab,252,0.49317,pakistan_punjab.png
+583,Belgium,Unknown,107,0.49385,belgium_unknown.png
+584,Russia,Kaliningrad Oblast,273,0.49630,russia_kaliningrad_oblast.png
+585,Mexico,Michoacan,279,0.50161,mexico_michoacan.png
+586,Russia,Zabaykalsky Krai,273,0.50496,russia_zabaykalsky_krai.png
+587,Brazil,Espirito Santo,276,0.50496,brazil_espirito_santo.png
+588,Russia,Moscow Oblast,273,0.50539,russia_moscow_oblast.png
+589,Russia,Karelia Republic,273,0.50814,russia_karelia_republic.png
+590,Belgium,Liege,108,0.50872,belgium_liege.png
+591,Syria,nan,282,0.50908,syria.png
+592,Russia,Saint Petersburg,273,0.51016,russia_saint_petersburg.png
+593,Colombia,Santander,263,0.51343,colombia_santander.png
+594,Belgium,Brussels,108,0.51810,belgium_brussels.png
+595,China,Tianjin,148,0.51873,china_tianjin.png
+596,Russia,North Ossetia Alania Republic,273,0.52084,russia_north_ossetia_alania_republic.png
+597,Netherlands,Friesland,214,0.52433,netherlands_friesland.png
+598,Russia,Kamchatka Krai,273,0.52561,russia_kamchatka_krai.png
+599,Russia,Leningrad Oblast,273,0.52974,russia_leningrad_oblast.png
+600,Canada,Prince Edward Island,56,0.53025,canada_prince_edward_island.png
+601,Mexico,Yucatan,284,0.53884,mexico_yucatan.png
+602,Japan,Tottori,77,0.55065,japan_tottori.png
+603,Russia,Bashkortostan Republic,273,0.55131,russia_bashkortostan_republic.png
+604,Chile,Metropolitana,283,0.56103,chile_metropolitana.png
+605,Russia,Tver Oblast,273,0.56356,russia_tver_oblast.png
+606,Russia,Udmurt Republic,273,0.56596,russia_udmurt_republic.png
+607,China,Shandong,96,0.56659,china_shandong.png
+608,China,Yunnan,67,0.56814,china_yunnan.png
+609,Russia,Murmansk Oblast,273,0.56877,russia_murmansk_oblast.png
+610,Netherlands,Noord Brabant,222,0.57065,netherlands_noord_brabant.png
+611,India,Gujarat,259,0.57283,india_gujarat.png
+612,United Kingdom,nan,97,0.57319,united_kingdom.png
+613,Russia,Orel Oblast,273,0.57689,russia_orel_oblast.png
+614,Ukraine,Sevastopol,261,0.57801,ukraine_sevastopol.png
+615,Russia,Perm Krai,273,0.57944,russia_perm_krai.png
+616,China,Fujian,165,0.58515,china_fujian.png
+617,Russia,Altai Krai,273,0.58740,russia_altai_krai.png
+618,Russia,Lipetsk Oblast,273,0.58768,russia_lipetsk_oblast.png
+619,Russia,Nizhny Novgorod Oblast,273,0.58952,russia_nizhny_novgorod_oblast.png
+620,Sweden,nan,99,0.58985,sweden.png
+621,Russia,Astrakhan Oblast,273,0.59807,russia_astrakhan_oblast.png
+622,Kuwait,nan,364,0.59972,kuwait.png
+623,Russia,Tyumen Oblast,273,0.60010,russia_tyumen_oblast.png
+624,Russia,Yamalo Nenets Autonomous Okrug,273,0.60391,russia_yamalo_nenets_autonomous_okrug.png
+625,Belgium,Antwerp,108,0.61152,belgium_antwerp.png
+626,China,Zhejiang,97,0.61276,china_zhejiang.png
+627,China,Shaanxi,158,0.61537,china_shaanxi.png
+628,Italy,Lazio,291,0.61747,italy_lazio.png
+629,Russia,Tatarstan Republic,273,0.61750,russia_tatarstan_republic.png
+630,Netherlands,Noord Holland,222,0.62867,netherlands_noord_holland.png
+631,India,West Bengal,258,0.64600,india_west_bengal.png
+632,Belgium,Flemish Brabant,108,0.65686,belgium_flemish_brabant.png
+633,Belgium,West Flanders,108,0.65719,belgium_west_flanders.png
+634,Russia,Magadan Oblast,273,0.66199,russia_magadan_oblast.png
+635,Russia,Belgorod Oblast,273,0.66492,russia_belgorod_oblast.png
+636,China,Jiangsu,78,0.66767,china_jiangsu.png
+637,Belarus,nan,342,0.67780,belarus.png
+638,Russia,Smolensk Oblast,273,0.67999,russia_smolensk_oblast.png
+639,Belgium,Limburg,108,0.68419,belgium_limburg.png
+640,Belgium,East Flanders,108,0.68560,belgium_east_flanders.png
+641,Russia,Sverdlovsk Oblast,273,0.68731,russia_sverdlovsk_oblast.png
+642,Russia,Yaroslavl Oblast,273,0.69050,russia_yaroslavl_oblast.png
+643,India,Tamil Nadu,259,0.69801,india_tamil_nadu.png
 644,Australia,Northern Territory,57,0.70133,australia_northern_territory.png
-645,Russia,Dagestan Republic,271,0.70670,russia_dagestan_republic.png
-646,Russia,Primorsky Krai,271,0.71070,russia_primorsky_krai.png
-647,Russia,Kemerovo Oblast,271,0.71706,russia_kemerovo_oblast.png
-648,Russia,Moscow,271,0.71897,russia_moscow.png
-649,Russia,Mari El Republic,271,0.72736,russia_mari_el_republic.png
-650,Russia,Kabardino Balkarian Republic,271,0.73622,russia_kabardino_balkarian_republic.png
+645,Russia,Dagestan Republic,273,0.70516,russia_dagestan_republic.png
+646,Russia,Moscow,273,0.70929,russia_moscow.png
+647,Russia,Primorsky Krai,273,0.71530,russia_primorsky_krai.png
+648,Russia,Mari El Republic,273,0.71688,russia_mari_el_republic.png
+649,Russia,Kemerovo Oblast,273,0.71955,russia_kemerovo_oblast.png
+650,Russia,Vologda Oblast,273,0.73859,russia_vologda_oblast.png
 651,Ukraine,nan,76,0.74004,ukraine.png
-652,Russia,Khanty Mansi Autonomous Okrug,271,0.74317,russia_khanty_mansi_autonomous_okrug.png
-653,Russia,Vologda Oblast,271,0.74849,russia_vologda_oblast.png
-654,Brunei,nan,53,0.74901,brunei.png
-655,Russia,Voronezh Oblast,271,0.75085,russia_voronezh_oblast.png
-656,China,Shanxi,70,0.75277,china_shanxi.png
-657,Russia,Kalmykia Republic,267,0.75374,russia_kalmykia_republic.png
-658,Russia,Stavropol Krai,271,0.77075,russia_stavropol_krai.png
-659,Russia,Irkutsk Oblast,271,0.83072,russia_irkutsk_oblast.png
-660,Russia,Rostov Oblast,271,0.84990,russia_rostov_oblast.png
-661,Russia,Ulyanovsk Oblast,271,0.87306,russia_ulyanovsk_oblast.png
-662,Russia,Volgograd Oblast,271,0.90787,russia_volgograd_oblast.png
-663,Russia,Krasnoyarsk Krai,271,0.91190,russia_krasnoyarsk_krai.png
-664,Russia,Novosibirsk Oblast,271,0.92961,russia_novosibirsk_oblast.png
-665,Russia,Krasnodar Krai,271,0.93000,russia_krasnodar_krai.png
-666,Russia,Saratov Oblast,271,0.93948,russia_saratov_oblast.png
-667,Russia,Karachay Cherkess Republic,271,0.95851,russia_karachay_cherkess_republic.png
-668,Russia,Orenburg Oblast,271,0.97428,russia_orenburg_oblast.png
+652,Russia,Kabardino Balkarian Republic,273,0.74179,russia_kabardino_balkarian_republic.png
+653,Russia,Voronezh Oblast,273,0.74285,russia_voronezh_oblast.png
+654,Russia,Kalmykia Republic,269,0.74366,russia_kalmykia_republic.png
+655,Russia,Khanty Mansi Autonomous Okrug,273,0.74539,russia_khanty_mansi_autonomous_okrug.png
+656,Brunei,nan,53,0.74901,brunei.png
+657,China,Shanxi,70,0.75277,china_shanxi.png
+658,Russia,Stavropol Krai,273,0.76402,russia_stavropol_krai.png
+659,Russia,Irkutsk Oblast,273,0.83586,russia_irkutsk_oblast.png
+660,Russia,Rostov Oblast,273,0.83676,russia_rostov_oblast.png
+661,Russia,Ulyanovsk Oblast,273,0.87365,russia_ulyanovsk_oblast.png
+662,Russia,Volgograd Oblast,273,0.89722,russia_volgograd_oblast.png
+663,Russia,Krasnoyarsk Krai,273,0.91363,russia_krasnoyarsk_krai.png
+664,Russia,Krasnodar Krai,273,0.93103,russia_krasnodar_krai.png
+665,Russia,Novosibirsk Oblast,273,0.93188,russia_novosibirsk_oblast.png
+666,Russia,Saratov Oblast,273,0.93959,russia_saratov_oblast.png
+667,Russia,Karachay Cherkess Republic,273,0.94824,russia_karachay_cherkess_republic.png
+668,Russia,Orenburg Oblast,273,0.97498,russia_orenburg_oblast.png
 669,Tajikistan,nan,240,0.98963,tajikistan.png
-670,Russia,Mordovia Republic,271,1.05845,russia_mordovia_republic.png
+670,Russia,Mordovia Republic,273,1.04629,russia_mordovia_republic.png
