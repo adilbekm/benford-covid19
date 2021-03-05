@@ -2,8 +2,6 @@
 
 **A look at COVID-19 case reports from around the world to see how well the numbers of daily positive cases fit into Benford's Law. The better the fit, the more accurate the data.**
 
-March 3, 2021
-
 ### What is Benford's Law?
 
 Numbers that represent real-life events follow a certain regularity. Specifically, the first digit of these numbers follows a strange pattern with the number 1 appearing about 30% of the time, the number 2 about 18% of the time, etc.— a frequency that declines logarithmically. This pattern is known as Benford's Law, and it can be used to identify fraud and other irregularities with reported numbers. To learn more, see this [wikipedia page](https://en.wikipedia.org/wiki/benford's_law) or the 2020 Netflix show [Connected](https://www.netflix.com/title/81031737) (episode "Digits").
@@ -57,6 +55,8 @@ The data covers the period from the beginning of COVID-19 reporting in the early
 ---
 
 For questions or comments, please email <adilbekm@yahoo.com>
+
+March 4, 2021
 
 [plt1]: world_output/united_kingdom_england.png
 [plt2]: world_output/jordan.png
