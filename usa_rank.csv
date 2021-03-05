@@ -1,56 +1,56 @@
-Rank,State,Numbers,BenfordError,Plot
-1,OR,350,0.08622,usa_or.png
-2,GU,287,0.09951,usa_gu.png
-3,AZ,356,0.10393,usa_az.png
-4,MT,333,0.10457,usa_mt.png
-5,DC,353,0.10910,usa_dc.png
-6,WY,342,0.11640,usa_wy.png
-7,UT,352,0.11983,usa_ut.png
-8,RI,347,0.13350,usa_ri.png
-9,KY,338,0.13718,usa_ky.png
-10,ND,346,0.13789,usa_nd.png
-11,WA,364,0.14623,usa_wa.png
-12,AK,333,0.14889,usa_ak.png
-13,TN,353,0.16013,usa_tn.png
-14,CT,275,0.16050,usa_ct.png
-15,CA,360,0.17123,usa_ca.png
-16,DE,343,0.17345,usa_de.png
-17,AL,352,0.17580,usa_al.png
-18,LA,314,0.17951,usa_la.png
-19,KS,186,0.18032,usa_ks.png
-20,SD,348,0.18687,usa_sd.png
-21,NC,351,0.18821,usa_nc.png
-22,VT,348,0.18839,usa_vt.png
-23,WI,355,0.19146,usa_wi.png
-24,NV,359,0.20012,usa_nv.png
-25,NE,357,0.20242,usa_ne.png
-26,OK,349,0.20352,usa_ok.png
-27,GA,360,0.21198,usa_ga.png
-28,AR,333,0.21475,usa_ar.png
-29,TX,356,0.22109,usa_tx.png
-30,PR,341,0.22110,usa_pr.png
-31,OH,353,0.22784,usa_oh.png
-32,SC,339,0.22857,usa_sc.png
-33,HI,340,0.23429,usa_hi.png
-34,WV,349,0.23479,usa_wv.png
-35,MI,330,0.23520,usa_mi.png
-36,MS,344,0.23578,usa_ms.png
-37,NH,324,0.23711,usa_nh.png
-38,ID,332,0.23995,usa_id.png
-39,MA,350,0.25718,usa_ma.png
-40,VA,356,0.26498,usa_va.png
-41,FL,359,0.26702,usa_fl.png
-42,IA,358,0.27826,usa_ia.png
-43,IL,359,0.29767,usa_il.png
-44,MD,359,0.32273,usa_md.png
-45,NM,353,0.32588,usa_nm.png
-46,VI,209,0.32813,usa_vi.png
-47,MN,355,0.34778,usa_mn.png
-48,MO,345,0.36169,usa_mo.png
-49,CO,359,0.36289,usa_co.png
-50,ME,348,0.37653,usa_me.png
-51,PA,358,0.38118,usa_pa.png
-52,IN,358,0.38653,usa_in.png
-53,NY,363,0.48734,usa_ny.png
-54,NJ,360,0.54794,usa_nj.png
-55,MP,72,0.60143,usa_mp.png
+Rank,State,StateName,Numbers,BenfordError,PlotName
+1,OR,Oregon,352,0.08492,usa_or.png
+2,GU,Guam,289,0.09395,usa_gu.png
+3,AZ,Arizona,358,0.10374,usa_az.png
+4,MT,Montana,335,0.11099,usa_mt.png
+5,WY,Wyoming,344,0.11109,usa_wy.png
+6,DC,District of Columbia,355,0.11612,usa_dc.png
+7,UT,Utah,354,0.11791,usa_ut.png
+8,KY,Kentucky,340,0.13161,usa_ky.png
+9,RI,Rhode Island,349,0.13213,usa_ri.png
+10,WA,Washington,366,0.13999,usa_wa.png
+11,ND,North Dakota,348,0.14114,usa_nd.png
+12,AK,Alaska,335,0.15284,usa_ak.png
+13,TN,Tennessee,355,0.15698,usa_tn.png
+14,CT,Connecticut,277,0.15815,usa_ct.png
+15,DE,Delaware,345,0.16895,usa_de.png
+16,AL,Alabama,354,0.17397,usa_al.png
+17,KS,Kansas,187,0.17480,usa_ks.png
+18,CA,California,362,0.17549,usa_ca.png
+19,LA,Louisiana,316,0.17866,usa_la.png
+20,SD,South Dakota,350,0.18126,usa_sd.png
+21,WI,Wisconsin,357,0.19031,usa_wi.png
+22,NC,North Carolina,353,0.19231,usa_nc.png
+23,VT,Vermont,350,0.19263,usa_vt.png
+24,NV,Nevada,361,0.19265,usa_nv.png
+25,NE,Nebraska,359,0.20413,usa_ne.png
+26,OK,Oklahoma,351,0.20780,usa_ok.png
+27,AR,Arkansas,335,0.20988,usa_ar.png
+28,GA,Georgia,362,0.21250,usa_ga.png
+29,PR,Puerto Rico,343,0.21464,usa_pr.png
+30,TX,Texas,358,0.22410,usa_tx.png
+31,OH,Ohio,355,0.22521,usa_oh.png
+32,MS,Mississippi,346,0.22633,usa_ms.png
+33,SC,South Carolina,341,0.22696,usa_sc.png
+34,NH,New Hampshire,326,0.22980,usa_nh.png
+35,MI,Michigan,332,0.22995,usa_mi.png
+36,HI,Hawaii,342,0.23205,usa_hi.png
+37,WV,West Virginia,351,0.23629,usa_wv.png
+38,ID,Idaho,334,0.24608,usa_id.png
+39,MA,Massachusetts,352,0.25598,usa_ma.png
+40,VA,Virginia,358,0.26058,usa_va.png
+41,FL,Florida,361,0.27328,usa_fl.png
+42,IA,Iowa,360,0.27646,usa_ia.png
+43,IL,Illinois,361,0.29993,usa_il.png
+44,VI,U.S. Virgin Islands,210,0.32138,usa_vi.png
+45,MD,Maryland,361,0.32323,usa_md.png
+46,NM,New Mexico,355,0.32373,usa_nm.png
+47,MN,Minnesota,357,0.35257,usa_mn.png
+48,CO,Colorado,361,0.35647,usa_co.png
+49,MO,Missouri,347,0.35987,usa_mo.png
+50,ME,Maine,350,0.36983,usa_me.png
+51,PA,Pennsylvania,360,0.37571,usa_pa.png
+52,IN,Indiana,360,0.39020,usa_in.png
+53,NY,New York,365,0.48903,usa_ny.png
+54,NJ,New Jersey,362,0.55263,usa_nj.png
+55,MP,Northern Mariana Islands,73,0.60409,usa_mp.png

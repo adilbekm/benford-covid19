@@ -29,7 +29,7 @@ rfn = 'usa_rank.csv'
 try: os.remove(rfn)
 except OSError: pass
 rf = open(rfn, 'a', encoding='utf8')
-rf.write('Rank,State,Numbers,BenfordError,Plot\n')
+rf.write('Rank,State,StateName,Numbers,BenfordError,PlotName\n')
 
 # df = df.astype({
 #     'date': 'datetime64[ns]',
@@ -88,10 +88,26 @@ states = [
     'OR', 'PA', 'PR', 'RI', 'SC', 'SD', 'TN', 'TX', 'UT', 'VA',
     'VI', 'VT', 'WA', 'WI', 'WV', 'WY']
 
+snames = ['Alaska', 'Alabama', 'Arkansas', 'American Samoa', 'Arizona',
+    'California', 'Colorado', 'Connecticut', 'District of Columbia',
+    'Delaware', 'Florida', 'Georgia', 'Guam', 'Hawaii', 'Iowa', 'Idaho',
+    'Illinois', 'Indiana', 'Kansas', 'Kentucky', 'Louisiana',
+    'Massachusetts', 'Maryland', 'Maine', 'Michigan', 'Minnesota',
+    'Missouri', 'Northern Mariana Islands', 'Mississippi', 'Montana',
+    'North Carolina', 'North Dakota', 'Nebraska', 'New Hampshire',
+    'New Jersey', 'New Mexico', 'Nevada', 'New York', 'Ohio', 'Oklahoma',
+    'Oregon', 'Pennsylvania', 'Puerto Rico', 'Rhode Island',
+    'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah',
+    'Virginia', 'U.S. Virgin Islands', 'Vermont', 'Washington',
+    'Wisconsin', 'West Virginia', 'Wyoming']
+
 err_list = []
 err_state_list = []
 
 for s in states:
+
+    s_index = states.index(s)
+    sname = snames[s_index]
     
     df1 = df[df.state == s]
     
@@ -121,7 +137,7 @@ for s in states:
 
     err = benford_error(p)
     err_list.append(err)
-    err_state_list.append([s, p_len, err, fname])
+    err_state_list.append([s, sname, p_len, err, fname])
 
 
 # ------------------------------------------------------------------
@@ -130,7 +146,7 @@ for s in states:
 err_list.sort()
 
 for i in range(len(err_state_list)):
-    e = err_state_list[i][2]
+    e = err_state_list[i][3]
     e_index = err_list.index(e)
     rank = e_index + 1
     err_state_list[i].insert(0, rank)
@@ -141,7 +157,7 @@ err_state_list.sort(key=lambda esr: esr[0])
 # write to file
 for es in err_state_list:
     es = [str(e) for e in es]
-    es[3] = es[3][0:7] # truncate error to shorter decimal
+    es[4] = es[4][0:7] # truncate error to shorter decimal
     es = ','.join(es)
     rf.write(es + '\n')
 

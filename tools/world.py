@@ -45,7 +45,7 @@ rfn = 'world_rank.csv'
 try: os.remove(rfn)
 except OSError: pass
 rf = open(rfn, 'a', encoding='utf8')
-rf.write('Rank,Location,Province,Numbers,BenfordError,Plot\n')
+rf.write('Rank,Location,Province,Numbers,BenfordError,PlotName\n')
 
 # get list of source files (csv files)
 p = 'world_data'
