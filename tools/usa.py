@@ -25,10 +25,15 @@ src_name = 'usa_data/all-states-history.csv'
 src = open(src_name, 'r', encoding='utf8')
 df = pd.read_csv(src)
 
-rfn = 'usa_rank.csv'
-try: os.remove(rfn)
+dst_name = 'extra/usa.csv'
+try: os.remove(dst_name)
 except OSError: pass
-rf = open(rfn, 'a', encoding='utf8')
+dst = open(dst_name, 'a', encoding='utf8')
+
+rf_name = 'usa_rank.csv'
+try: os.remove(rf_name)
+except OSError: pass
+rf = open(rf_name, 'a', encoding='utf8')
 rf.write('Rank,State,StateName,Numbers,BenfordError,PlotName\n')
 
 # df = df.astype({
@@ -141,6 +146,32 @@ for s in states:
 
 
 # ------------------------------------------------------------------
+# save dataframe
+
+df = df.loc[:, ['date', 'state', 'death', 'deathIncrease', 'positive', 
+    'positiveIncrease']]
+
+df.sort_values(by=['state', 'date'], ignore_index=True, inplace=True)
+
+df.rename(columns={'death':'deaths', 'deathIncrease':'deaths_inc', 
+    'positive':'cases', 'positiveIncrease':'cases_inc'}, inplace=True)
+
+def get_state_name(code):
+    i = states.index(code)
+    return snames[i]
+
+df['state_name'] = df.state.apply(get_state_name)
+
+df = df[['date', 'state', 'state_name', 'deaths', 'deaths_inc',
+    'cases', 'cases_inc']]
+
+df.to_csv(dst, index=False, sep='|')
+dst.close()
+
+print('[OK ] dataframe saved in file {}'.format(dst_name))
+
+
+# ------------------------------------------------------------------
 # compute state ranks by error size
 
 err_list.sort()
@@ -160,6 +191,8 @@ for es in err_state_list:
     es[4] = es[4][0:7] # truncate error to shorter decimal
     es = ','.join(es)
     rf.write(es + '\n')
+
+print('[OK ] ranks saved in file {}'.format(rf_name))
 
 
 print('[END] usa output is ready')

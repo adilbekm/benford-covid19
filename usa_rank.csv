@@ -1,56 +1,56 @@
 Rank,State,StateName,Numbers,BenfordError,PlotName
-1,OR,Oregon,352,0.08492,usa_or.png
-2,GU,Guam,289,0.09395,usa_gu.png
-3,AZ,Arizona,358,0.10374,usa_az.png
-4,MT,Montana,335,0.11099,usa_mt.png
-5,WY,Wyoming,344,0.11109,usa_wy.png
-6,DC,District of Columbia,355,0.11612,usa_dc.png
-7,UT,Utah,354,0.11791,usa_ut.png
-8,KY,Kentucky,340,0.13161,usa_ky.png
-9,RI,Rhode Island,349,0.13213,usa_ri.png
-10,WA,Washington,366,0.13999,usa_wa.png
-11,ND,North Dakota,348,0.14114,usa_nd.png
-12,AK,Alaska,335,0.15284,usa_ak.png
-13,TN,Tennessee,355,0.15698,usa_tn.png
-14,CT,Connecticut,277,0.15815,usa_ct.png
-15,DE,Delaware,345,0.16895,usa_de.png
-16,AL,Alabama,354,0.17397,usa_al.png
-17,KS,Kansas,187,0.17480,usa_ks.png
-18,CA,California,362,0.17549,usa_ca.png
-19,LA,Louisiana,316,0.17866,usa_la.png
-20,SD,South Dakota,350,0.18126,usa_sd.png
-21,WI,Wisconsin,357,0.19031,usa_wi.png
-22,NC,North Carolina,353,0.19231,usa_nc.png
-23,VT,Vermont,350,0.19263,usa_vt.png
-24,NV,Nevada,361,0.19265,usa_nv.png
-25,NE,Nebraska,359,0.20413,usa_ne.png
-26,OK,Oklahoma,351,0.20780,usa_ok.png
-27,AR,Arkansas,335,0.20988,usa_ar.png
-28,GA,Georgia,362,0.21250,usa_ga.png
-29,PR,Puerto Rico,343,0.21464,usa_pr.png
-30,TX,Texas,358,0.22410,usa_tx.png
-31,OH,Ohio,355,0.22521,usa_oh.png
-32,MS,Mississippi,346,0.22633,usa_ms.png
-33,SC,South Carolina,341,0.22696,usa_sc.png
-34,NH,New Hampshire,326,0.22980,usa_nh.png
-35,MI,Michigan,332,0.22995,usa_mi.png
-36,HI,Hawaii,342,0.23205,usa_hi.png
-37,WV,West Virginia,351,0.23629,usa_wv.png
-38,ID,Idaho,334,0.24608,usa_id.png
-39,MA,Massachusetts,352,0.25598,usa_ma.png
-40,VA,Virginia,358,0.26058,usa_va.png
-41,FL,Florida,361,0.27328,usa_fl.png
-42,IA,Iowa,360,0.27646,usa_ia.png
-43,IL,Illinois,361,0.29993,usa_il.png
-44,VI,U.S. Virgin Islands,210,0.32138,usa_vi.png
-45,MD,Maryland,361,0.32323,usa_md.png
-46,NM,New Mexico,355,0.32373,usa_nm.png
-47,MN,Minnesota,357,0.35257,usa_mn.png
-48,CO,Colorado,361,0.35647,usa_co.png
-49,MO,Missouri,347,0.35987,usa_mo.png
-50,ME,Maine,350,0.36983,usa_me.png
-51,PA,Pennsylvania,360,0.37571,usa_pa.png
-52,IN,Indiana,360,0.39020,usa_in.png
-53,NY,New York,365,0.48903,usa_ny.png
-54,NJ,New Jersey,362,0.55263,usa_nj.png
-55,MP,Northern Mariana Islands,73,0.60409,usa_mp.png
+1,OR,Oregon,356,0.08907,usa_or.png
+2,AZ,Arizona,362,0.09232,usa_az.png
+3,GU,Guam,292,0.09745,usa_gu.png
+4,WY,Wyoming,346,0.10585,usa_wy.png
+5,DC,District of Columbia,359,0.10765,usa_dc.png
+6,MT,Montana,339,0.12360,usa_mt.png
+7,UT,Utah,357,0.12361,usa_ut.png
+8,KY,Kentucky,344,0.12648,usa_ky.png
+9,RI,Rhode Island,351,0.13078,usa_ri.png
+10,WA,Washington,370,0.14144,usa_wa.png
+11,ND,North Dakota,352,0.14186,usa_nd.png
+12,AK,Alaska,337,0.15673,usa_ak.png
+13,DE,Delaware,349,0.16011,usa_de.png
+14,TN,Tennessee,358,0.16071,usa_tn.png
+15,CT,Connecticut,279,0.16143,usa_ct.png
+16,KS,Kansas,188,0.16933,usa_ks.png
+17,SD,South Dakota,354,0.17022,usa_sd.png
+18,AL,Alabama,358,0.17037,usa_al.png
+19,LA,Louisiana,319,0.17428,usa_la.png
+20,NV,Nevada,364,0.18160,usa_nv.png
+21,CA,California,366,0.18388,usa_ca.png
+22,WI,Wisconsin,361,0.19119,usa_wi.png
+23,NC,North Carolina,356,0.19838,usa_nc.png
+24,VT,Vermont,354,0.20096,usa_vt.png
+25,GA,Georgia,366,0.20259,usa_ga.png
+26,AR,Arkansas,339,0.20706,usa_ar.png
+27,NE,Nebraska,363,0.20751,usa_ne.png
+28,OK,Oklahoma,355,0.21058,usa_ok.png
+29,PR,Puerto Rico,346,0.21087,usa_pr.png
+30,MS,Mississippi,350,0.21348,usa_ms.png
+31,NH,New Hampshire,330,0.21545,usa_nh.png
+32,TX,Texas,362,0.22084,usa_tx.png
+33,MI,Michigan,335,0.22218,usa_mi.png
+34,HI,Hawaii,346,0.22766,usa_hi.png
+35,OH,Ohio,359,0.23136,usa_oh.png
+36,SC,South Carolina,345,0.23540,usa_sc.png
+37,WV,West Virginia,355,0.23874,usa_wv.png
+38,MA,Massachusetts,356,0.24238,usa_ma.png
+39,ID,Idaho,338,0.24322,usa_id.png
+40,VA,Virginia,362,0.25194,usa_va.png
+41,FL,Florida,365,0.27465,usa_fl.png
+42,IA,Iowa,364,0.27841,usa_ia.png
+43,IL,Illinois,365,0.30436,usa_il.png
+44,VI,U.S. Virgin Islands,212,0.31752,usa_vi.png
+45,MD,Maryland,365,0.33492,usa_md.png
+46,CO,Colorado,365,0.34384,usa_co.png
+47,NM,New Mexico,361,0.34511,usa_nm.png
+48,MO,Missouri,351,0.35060,usa_mo.png
+49,MN,Minnesota,361,0.36201,usa_mn.png
+50,ME,Maine,354,0.36231,usa_me.png
+51,PA,Pennsylvania,364,0.36497,usa_pa.png
+52,IN,Indiana,364,0.39093,usa_in.png
+53,NY,New York,369,0.49235,usa_ny.png
+54,NJ,New Jersey,366,0.55640,usa_nj.png
+55,MP,Northern Mariana Islands,74,0.60669,usa_mp.png
