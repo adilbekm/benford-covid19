@@ -16,7 +16,7 @@ For example, England, UK has reported a total of 266 numbers of daily positive c
 
 ### What are the results?
 
-Using the Benford Error, I ranked the locations from best (smallest error) to worst (largest error), and created plots for each location that show the error visually. 
+Using the Benford Error, I ranked the locations from most accurate (smallest error) to least accurate (largest error), and created plots for each location that show the error visually. 
 
 USA:
 
@@ -108,11 +108,11 @@ World:
 
 For full results, please see the following files:
 
-`usa_rank.csv` — File showing how each U.S. state or territory ranks from best to worst, based on how their COVID-19 case numbers fit into Benford's Law. The last column has the file name with the Benford plot for the location.
+`usa_rank.csv` — File showing how each U.S. state or territory ranks from most accurate to least accurate, based on how their COVID-19 case numbers fit into Benford's Law. The last column has the file name with the Benford plot for the location.
 
 `usa_output/` — Folder with Benford plots for U.S. states and territories.
 
-`world_rank.csv` — File showing how each country and province ranks from best to worst, based on how their COVID-19 case numbers fit into Benford's Law. The file is searchable. The last column has the file name with the Benford plot for the location.
+`world_rank.csv` — File showing how each country and province ranks from most accurate to least accurate, based on how their COVID-19 case numbers fit into Benford's Law. The file is searchable. The last column has the file name with the Benford plot for the location.
 
 `world_output/` — Folder with Benford plots for world countries and their provinces.
 
